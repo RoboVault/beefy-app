@@ -60,12 +60,15 @@ const HeaderLinks = ({
 
   const handleClick = event => {
     switch (event) {
+      /*
       case 'Deutsch':
         return i18n.changeLanguage('de').then(() => setLanguage(event));
       case 'Ελληνικά':
         return i18n.changeLanguage('el').then(() => setLanguage(event));
+      */
       case 'English':
         return i18n.changeLanguage('en').then(() => setLanguage(event));
+      /*
       case 'Español':
         return i18n.changeLanguage('es').then(() => setLanguage(event));
       case 'Français':
@@ -80,8 +83,10 @@ const HeaderLinks = ({
         return i18n.changeLanguage('ko').then(() => setLanguage(event));
       case 'Nederlands':
         return i18n.changeLanguage('nl').then(() => setLanguage(event));
-      case 'Português':
-        return i18n.changeLanguage('pt').then(() => setLanguage(event));
+      case 'Português do Brasil':
+        return i18n.changeLanguage('pt-BR').then(() => setLanguage(event));
+      case 'Português de Portugal':
+        return i18n.changeLanguage('pt-PT').then(() => setLanguage(event));
       case 'Pусский':
         return i18n.changeLanguage('ru').then(() => setLanguage(event));
       case 'Svenska':
@@ -93,6 +98,7 @@ const HeaderLinks = ({
       case 'Українська':
         return i18n.changeLanguage('uk').then(() => setLanguage(event));
       // TODO: more translations
+      */
       default:
         return;
     }
@@ -118,8 +124,9 @@ const HeaderLinks = ({
           }}
           onClick={handleClick}
           dropdownList={[
-            'Deutsch',
+            //'Deutsch',
             'English',
+            /*
             'Ελληνικά',
             'Español',
             'Français',
@@ -128,16 +135,18 @@ const HeaderLinks = ({
             'Italiano',
             '한글',
             'Nederlands',
-            'Português',
+            'Português do Brasil',
+            'Português de Portugal',
             'Pусский',
             'Svenska',
             'Türkçe',
             'Українська',
             '中文',
+            */
             // TODO: more translations
             { divider: true },
             <a
-              href="https://github.com/beefyfinance/beefy-app/tree/master/src/locales"
+              href="https://github.com/robovault/robo-vault-app/tree/master/src/locales"
               target="_blank"
               rel="noopener noreferrer"
               className={classes.cta}

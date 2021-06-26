@@ -226,6 +226,7 @@ const DepositSection = ({ pool }) => {
       return;
     }
 
+    console.log('IS ZAP DEPOSIT?! ' + deposit.isZap)
     if (deposit.isZap) {
       // Zap deposit
       const swapAmountOut = pool.zapEstimate.swapAmountOut;
@@ -257,6 +258,7 @@ const DepositSection = ({ pool }) => {
         amount: convertAmountToRawNumber(deposit.amount, deposit.token.decimals),
         contractAddress: deposit.vaultAddress,
       };
+      console.log(depositArgs)
       if (pool.tokenAddress) {
         fetchDeposit(depositArgs)
           .then(() => {

@@ -1,3 +1,5 @@
+'use strict';
+
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
@@ -55,8 +57,10 @@ export default function Pools() {
   return (
     <Grid container className={classes.container}>
       <Grid item xs={6}>
-        <h1 className={classes.title}>{t('Vault-Network')}</h1>
-        <NetworksToggle />
+        {
+          //<h1 className={classes.title}>{t('Vault-Network')}</h1>
+          //<NetworksToggle />
+        }
       </Grid>
       <Grid item xs={6}>
         <div className={classes.tvl}>
@@ -70,17 +74,13 @@ export default function Pools() {
           </span>
 
           <span className={classes.text}>
-            {t('Vault-Deposited')}{' '}
+            {t('Vault-Holdings')}{' '}
             {fetchVaultsDataDone && fetchBalancesDone ? (
               formatGlobalTvl(userTvl)
             ) : (
               <TVLLoader className={classes.titleLoader} />
             )}
           </span>
-          <h4 className={classes.subtitle} style={{ marginTop: '16px' }}>
-            <AllInclusiveIcon className={classes.infinityIcon} />
-            {t('Vault-AutocompoundingNote')}
-          </h4>
         </div>
       </Grid>
 

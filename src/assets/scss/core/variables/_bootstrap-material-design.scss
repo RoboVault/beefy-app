@@ -5,7 +5,7 @@ $bmd-readonly-underline: $input-border-color !default;
 
 // --------------------
 // inputs
-$mdb-input-placeholder-color: #aaaaaa !default;
+$mdb-input-placeholder-color: #c2c2c2 !default;
 $mdb-input-underline-color: #d2d2d2 !default;
 
 $mdb-input-font-size-base: 14px !default;
@@ -34,7 +34,7 @@ $bmd-form-line-height-sm: 1 !default; // set as 1x font-size so that padding is 
 $bmd-label-top-margin-sm: 0.75rem !default; // 12px
 
 $text-disabled: #a8a8a8 !default;
-$background-disabled: #eaeaea !default;
+$background-disabled: #2a2275 !default;
 
 $margin-base: 1.071rem !default;
 
@@ -97,9 +97,9 @@ $bmd-radio-color-disabled-inverse: rgba(
 ); // dark theme spec: Disabled: #FFFFFF, Opacity  30%
 
 $white-color: #fff !default;
-$navbar-color: #555 !default;
+$navbar-color: rgb(87, 0, 158) !default;
 $pills-color: $navbar-color !default;
-$black-color: #3c4858 !default;
+$black-color: #31218b !default;
 $white-transparent: rgba($white-color, 0.8);
 $transparent: transparent;
 

@@ -10,6 +10,18 @@ import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
+const singleAssetExtensions = ['svg', 'webp', 'png'];
+const singleAsset = symbol => {
+  for (let ext of singleAssetExtensions) {
+    try {
+      return require(`images/single-assets/${symbol}.${ext}`);
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+  throw new Error(`Image required for '${symbol}' token in 'images/single-assets/'`);
+};
+
 const PoolTitle = ({
   name,
   logo,
@@ -42,20 +54,20 @@ const PoolTitle = ({
           alt={assets[0]}
           variant="square"
           imgProps={{ style: { objectFit: 'contain' } }}
-          src={require(`images/single-assets/${assets[0]}.png`)}
+          src={singleAsset(assets[0])}
         />
         <Avatar
           alt={assets[1]}
           variant="square"
           imgProps={{ style: { objectFit: 'contain' } }}
-          src={require(`images/single-assets/${assets[1]}.png`)}
+          src={singleAsset(assets[1])}
         />
       </AvatarGroup>
     );
   }
 
   return (
-    <Grid item xs={3} className={classes.container}>
+    <Grid container wrap="nowrap">
       {avatar}
       <div className={classes.texts}>
         <Typography className={classes.title} variant="body2" gutterBottom>
@@ -105,7 +117,7 @@ const PoolTitle = ({
           )}
         </div>
         {launchpool ? (
-          <a className={classes.btnBoost} href={'/stake/pool/' + launchpool.poolIndex}>
+          <a className={classes.btnBoost} href={'/stake/pool/' + launchpool.id}>
             <img alt="Boost" src={require('images/stake/boost.svg')} height={15} />
             <span>
               <img alt="Fire" src={require('images/stake/fire.png')} height={30} />

@@ -31,7 +31,7 @@ export function fetchVaultsData({ web3, pools }) {
         const vault = new web3.eth.Contract(vaultABI, pool.earnedTokenAddress);
         return {
           pricePerFullShare: vault.methods.getPricePerFullShare(),
-          tvl: vault.methods.balance(),
+          tvl: vault.methods.calcPoolValueInToken(),
         };
       });
 
@@ -41,7 +41,7 @@ export function fetchVaultsData({ web3, pools }) {
       ])
         .then(data => {
           const newPools = pools.map((pool, i) => {
-            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, 18).toNumber();
+            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, pool.earnedTokenDecimals).toNumber();
             return {
               pricePerFullShare: new BigNumber(pricePerFullShare).toNumber() || 1,
               tvl: byDecimals(data[0][i].tvl, pool.tokenDecimals).toNumber(),

@@ -3,11 +3,11 @@ import { useCallback } from 'react';
 import { getNetworkFriendlyName } from '../helpers/getNetworkData';
 
 const translate = (data, key, t) => t(key, data);
-const appendTitle = str => str + APPEND_TITLE;
+const appendTitle = str => APPEND_TITLE + str;
 const translateAppendTitle = (data, key, t) => appendTitle(translate(data, key, t));
 
 // Appended to title and og:title
-const APPEND_TITLE = ' | Beefy Finance';
+const APPEND_TITLE = 'Robo Vault | ';
 
 // Defined here to avoid adding an entry to translation.json where not needed
 const PAGE_META = {

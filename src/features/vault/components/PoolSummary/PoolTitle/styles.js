@@ -1,7 +1,4 @@
 const styles = theme => ({
-  container: {
-    display: 'flex',
-  },
   texts: {
     marginLeft: '20px',
   },
@@ -34,12 +31,12 @@ const styles = theme => ({
     color: theme.palette.text.primary,
     marginLeft: '4px',
     'flex-shrink': 0,
-    width: '40px',
-    height: '40px',
+    width: '45px',
+    height: '45px',
     '& .MuiAvatarGroup-avatar': {
       border: 'none',
-      width: '70%',
-      height: '70%',
+      width: '65%',
+      height: '65%',
       '&:first-child': {
         position: 'absolute',
         top: 0,

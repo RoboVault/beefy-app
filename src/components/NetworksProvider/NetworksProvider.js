@@ -8,6 +8,7 @@ const NetworksProvider = ({ children }) => {
   const closeModal = () => setIsModalOpen(false);
 
   const networks = [
+    /*
     {
       name: 'BSC',
       asset: 'BNB',
@@ -32,6 +33,7 @@ const NetworksProvider = ({ children }) => {
       id: '137',
       url: 'https://polygon.beefy.finance',
     },
+    */
     {
       name: 'FANTOM',
       asset: 'FTM',

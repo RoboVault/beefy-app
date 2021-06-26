@@ -1,4 +1,5 @@
 export const nativeCoins = [
+  
   {
     chainId: 1,
     name: 'Ethereum',
@@ -39,6 +40,7 @@ export const nativeCoins = [
     wrappedSymbol: 'WMATIC',
     allowance: Infinity,
   },
+  
   {
     chainId: 250,
     name: 'Fantom',

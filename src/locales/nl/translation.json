@@ -16,7 +16,7 @@
   "Vault-DepositButtonAll": "Stort alles",
   "Vault-DepositTokensNote": "Je ontvangt {{mooToken}} als stortingsbewijs van uw {{assetToken}} vermogen. Dit bewijs is nodig om uw {{assetToken}} op te nemen, verhandel of verstuur {{mooToken}} niet naar vreemden!",
   "Vault-DepositFee": "Er zijn {{depositFee}} stortingskosten, geen opnamekosten",
-  "Vault-Deposited": "Gestort",
+  "Vault-Holdings": "Gestort",
   "Vault-DepositSuccess": "Storting gelukt",
   "Vault-DepositError": "Storting mislukt: {{error}}",
   "Vault-DepositScenario": "Storting resulteert in:",

@@ -13,7 +13,7 @@
   "Vault-DepositButton": "Внести",
   "Vault-DepositButtonAll": "Внести Все",
   "Vault-DepositFee": "Комісія за депозит {{depositFee}}, виведення без комісії",
-  "Vault-Deposited": "Внесено",
+  "Vault-Holdings": "Внесено",
   "Vault-DepositSuccess": "Внесено успішно",
   "Vault-DepositError": "Помилка внесення: {{error}}",
   "Vault-Withdrawing": "Зняття...",

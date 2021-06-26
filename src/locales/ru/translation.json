@@ -19,7 +19,7 @@
   "Vault-DepositTokensNote": "Вы получите токен {{mooToken}} в качестве квитанции за ваши вложенные активы {{assetToken}}. Этот токен необходим для вывода вашего вклада {{assetToken}}, не продавайте или переводите {{mooToken}} другим людям!",
   "Vault-DepositFee": "Комиссия за депозит {{depositFee}}, вывод без комиссии",
   "Vault-DepositAndWithdrawFee": "Комиссия за депозит - {{depositFee}}. Комиссия за снятие средств - {{withdrawalFee}}.",
-  "Vault-Deposited": "Внесено",
+  "Vault-Holdings": "Внесено",
   "Vault-DepositSuccess": "Успешный депозит",
   "Vault-DepositError": "Ошибка внесения: {{error}}",
   "Vault-DepositScenario": "Депозит приведет к:",

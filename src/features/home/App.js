@@ -92,7 +92,7 @@ export default function App({ children }) {
               </div>
 
               <Footer />
-              <Pastures />
+              
             </div>
           </NetworksProvider>
         </SnackbarProvider>
