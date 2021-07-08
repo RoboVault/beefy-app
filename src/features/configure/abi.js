@@ -15,11 +15,86 @@ export const vaultABI = [
 		"inputs": [
 			{
 				"internalType": "uint256",
+				"name": "_amountShort",
+				"type": "uint256"
+			}
+		],
+		"name": "_addToLP",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "borrowAmount",
+				"type": "uint256"
+			}
+		],
+		"name": "_borrow",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "_borrowBaseEq",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "_depoistLp",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "_lendBase",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
 				"name": "_redeem_amount",
 				"type": "uint256"
 			}
 		],
-		"name": "_redeem_base",
+		"name": "_redeemBase",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -37,7 +112,7 @@ export const vaultABI = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "_repay_debt",
+		"name": "_repayDebt",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -46,7 +121,7 @@ export const vaultABI = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "_sell_harvest_base",
+		"name": "_sellHarvestBase",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -61,7 +136,7 @@ export const vaultABI = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "_sell_harvest_short",
+		"name": "_sellHarvestShort",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -76,7 +151,22 @@ export const vaultABI = [
 				"type": "uint256"
 			}
 		],
-		"name": "_swap_base_for_short",
+		"name": "_swapBaseShort",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amountOut",
+				"type": "uint256"
+			}
+		],
+		"name": "_swapBaseShortExact",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -91,7 +181,7 @@ export const vaultABI = [
 				"type": "uint256"
 			}
 		],
-		"name": "_swap_short_for_base",
+		"name": "_swapShortBase",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -145,6 +235,21 @@ export const vaultABI = [
 				"type": "uint256"
 			}
 		],
+		"name": "_withdrawSome",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
 		"name": "_withdrawSomeLp",
 		"outputs": [],
 		"payable": false,
@@ -181,21 +286,6 @@ export const vaultABI = [
 		"constant": false,
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_amount",
-				"type": "uint256"
-			}
-		],
-		"name": "approveBase",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
 				"internalType": "address",
 				"name": "spender",
 				"type": "address"
@@ -221,7 +311,7 @@ export const vaultABI = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "deploy_strat",
+		"name": "deployStrat",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -237,6 +327,24 @@ export const vaultABI = [
 			}
 		],
 		"name": "deposit",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "exitPositionsAll",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "exitPositionsLP",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -298,7 +406,7 @@ export const vaultABI = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "removeShortPosition",
+		"name": "renounceOwnership",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -307,7 +415,52 @@ export const vaultABI = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "renounceOwnership",
+		"name": "resetApprovals",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_lower",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_upper",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_target",
+				"type": "uint256"
+			}
+		],
+		"name": "setCollateralThresholds",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_lower",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_upper",
+				"type": "uint256"
+			}
+		],
+		"name": "setDebtThresholds",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -416,30 +569,6 @@ export const vaultABI = [
 		"type": "function"
 	},
 	{
-		"constant": false,
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_shares",
-				"type": "uint256"
-			}
-		],
-		"name": "withdraw",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
-		"name": "withdrawAll",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -449,27 +578,35 @@ export const vaultABI = [
 		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": false,
+				"indexed": true,
 				"internalType": "address",
-				"name": "newStrategist",
+				"name": "owner",
 				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
 			}
 		],
-		"name": "UpdatedStrategist",
+		"name": "Approval",
 		"type": "event"
 	},
 	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": false,
-				"internalType": "address",
-				"name": "newKeeper",
-				"type": "address"
-			}
-		],
-		"name": "UpdatedKeeper",
-		"type": "event"
+		"constant": false,
+		"inputs": [],
+		"name": "approveContracts",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
 	},
 	{
 		"anonymous": false,
@@ -519,31 +656,56 @@ export const vaultABI = [
 		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "spender",
-				"type": "address"
-			},
-			{
 				"indexed": false,
-				"internalType": "uint256",
-				"name": "value",
-				"type": "uint256"
+				"internalType": "address",
+				"name": "newKeeper",
+				"type": "address"
 			}
 		],
-		"name": "Approval",
+		"name": "UpdatedKeeper",
 		"type": "event"
 	},
 	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "newStrategist",
+				"type": "address"
+			}
+		],
+		"name": "UpdatedStrategist",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_shares",
+				"type": "uint256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "withdrawAll",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
 		"constant": true,
 		"inputs": [],
-		"name": "_get_base_in_lp",
+		"name": "_getHarvestInHarvestLp",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -558,7 +720,7 @@ export const vaultABI = [
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "_get_harvest_in_harvest_lp",
+		"name": "_getShortInHarvestLp",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -573,22 +735,7 @@ export const vaultABI = [
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "_get_short_in_harvest_lp",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "_get_short_in_lp",
+		"name": "_getShortInLp",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -710,6 +857,21 @@ export const vaultABI = [
 	{
 		"constant": true,
 		"inputs": [],
+		"name": "balancePendingHarvest",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
 		"name": "balanceShort",
 		"outputs": [
 			{
@@ -726,6 +888,21 @@ export const vaultABI = [
 		"constant": true,
 		"inputs": [],
 		"name": "balanceShortBaseEq",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "calcBorrowAllocation",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -821,6 +998,36 @@ export const vaultABI = [
 				"internalType": "uint8",
 				"name": "",
 				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBaseInLending",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBaseInLp",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"payable": false,
