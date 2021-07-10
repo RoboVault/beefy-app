@@ -16,7 +16,7 @@
   "Vault-DepositButtonAll": "Deposita tutto",
   "Vault-DepositTokensNote": "Riceverai dei token {{mooToken}} come ricevuta dei tuoi token {{assetToken}} depositati. La ricevuta è necessaria per prelevare i tuoi token {{assetToken}}, non scambiare o trasferire i tuoi {{mooToken}} a sconosciuti!",
   "Vault-DepositFee": "C'è una commissione di deposito di {{depositFee}}. Non c'è alcuna commissione di prelievo.",
-  "Vault-Deposited": "Depositato",
+  "Vault-Holdings": "Depositato",
   "Vault-DepositSuccess": "Deposito riuscito",
   "Vault-DepositError": "Errore durante il deposito: {{error}}",
   "Vault-DepositScenario": "Il deposito prevede che:",

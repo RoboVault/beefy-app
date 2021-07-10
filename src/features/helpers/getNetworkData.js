@@ -26,18 +26,21 @@ import {
 } from '../configure';
 
 const networkTxUrls = {
+  250: hash => `https://ftmscan.com/tx/${hash}`,
   56: hash => `https://bscscan.com/tx/${hash}`,
   128: hash => `https://hecoinfo.com/tx/${hash}`,
   43114: hash => `https://cchain.explorer.avax.network/tx/${hash}/token-transfers`,
   137: hash => `https://polygonscan.com/tx/${hash}`,
-  250: hash => `https://ftmscan.com/tx/${hash}`,
+  
 };
 
 const networkFriendlyName = {
+  /*
   56: 'BSC',
   128: 'HECO',
   43114: 'AVAX',
   137: 'Polygon',
+  */
   250: 'Fantom',
 };
 
@@ -55,6 +58,7 @@ export const getNetworkCoin = () => {
 
 export const getNetworkPools = () => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return bscPools;
     case '128':
@@ -63,6 +67,7 @@ export const getNetworkPools = () => {
       return avalanchePools;
     case '137':
       return polygonPools;
+    */
     case '250':
       return fantomPools;
     default:
@@ -72,6 +77,7 @@ export const getNetworkPools = () => {
 
 export const getNetworkTokens = () => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return bscAddressBook.tokens;
     case '128':
@@ -80,17 +86,19 @@ export const getNetworkTokens = () => {
       return avaxAddressBook.tokens;
     case '137':
       return polygonAddressBook.tokens;
+    */
     case '250':
       return fantomAddressBook.tokens;
     default:
       throw new Error(
-        `Create address book for this chainId first. Check out https://github.com/beefyfinance/address-book`
+        `Create address book for this chainId first.`
       );
   }
 };
 
 export const getNetworkBurnTokens = () => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return {
         [bscAddressBook.tokens.GARUDA.symbol]: bscAddressBook.tokens.GARUDA,
@@ -102,17 +110,19 @@ export const getNetworkBurnTokens = () => {
       return {};
     case '137':
       return {};
+    */
     case '250':
       return {};
     default:
       throw new Error(
-        `Create address book for this chainId first. Check out https://github.com/beefyfinance/address-book`
+        `Create address book for this chainId first. `
       );
   }
 };
 
 export const getNetworkZaps = () => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return bscZaps;
     case '128':
@@ -121,6 +131,7 @@ export const getNetworkZaps = () => {
       return avalancheZaps;
     case '137':
       return polygonZaps;
+    */
     case '250':
       return fantomZaps;
     default:
@@ -130,6 +141,7 @@ export const getNetworkZaps = () => {
 
 export const getNetworkStakePools = () => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return bscStakePools;
     case '128':
@@ -138,6 +150,7 @@ export const getNetworkStakePools = () => {
       return avalancheStakePools;
     case '137':
       return polygonStakePools;
+    */
     case '250':
       return fantomStakePools;
     default:
@@ -147,6 +160,7 @@ export const getNetworkStakePools = () => {
 
 export const getNetworkStables = () => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return [
         'BUSD',
@@ -169,7 +183,8 @@ export const getNetworkStables = () => {
     case '43114':
       return ['USDT', 'DAI', 'BUSD', 'zDAI', 'zUSDT'];
     case '137':
-      return ['USDC', 'USDT', 'maUSDC', 'DAI', 'IRON', 'miMATIC', 'FRAX', 'rUSD'];
+      return ['USDC', 'USDT', 'maUSDC', 'DAI', 'IRON'];
+    */
     case '250':
       return ['USDC', 'USDT', 'DAI', 'fUSDT'];
     default:
@@ -179,6 +194,7 @@ export const getNetworkStables = () => {
 
 export const getNetworkMulticall = () => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return '0xB94858b0bB5437498F5453A16039337e5Fdc269C';
     case '128':
@@ -187,6 +203,7 @@ export const getNetworkMulticall = () => {
       return '0x6FfF95AC47b586bDDEea244b3c2fe9c4B07b9F76';
     case '137':
       return '0xC3821F0b56FA4F4794d5d760f94B812DE261361B';
+    */
     case '250':
       return '0xC9F6b1B53E056fd04bE5a197ce4B2423d456B982';
     default:
@@ -196,6 +213,7 @@ export const getNetworkMulticall = () => {
 
 export const getNetworkConnectors = t => {
   switch (process.env.REACT_APP_NETWORK_ID) {
+    /*
     case '56':
       return {
         network: 'binance',
@@ -333,6 +351,7 @@ export const getNetworkConnectors = t => {
           },
         },
       };
+    */
     case '250':
       return {
         network: 'fantom',

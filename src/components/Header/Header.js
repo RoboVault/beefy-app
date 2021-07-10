@@ -31,32 +31,21 @@ const Header = ({ links, isNightMode, setNightMode }) => {
         <Button href="/" className={classes.title}>
           <Hidden xsDown>
             <img
-              alt="BIFI"
-              src={require(`images/BIFI-logo.svg`)}
-              height={'40px'}
+              alt="ROBO"
+              src={require(`images/single-assets/robo-vault-logo.png`)}
+              height={'160px'}
               className={classes.logo}
             />
-            beefy.finance
           </Hidden>
           <Hidden smUp>
             <img
-              alt="BIFI"
-              src={require(`images/BIFI-logo.svg`)}
-              height={'35px'}
+              alt="ROBO"
+              src={require(`images/single-assets/robo-vault-logo.png`)}
+              height={'160px'}
               className={classes.logo}
             />
           </Hidden>
         </Button>
-
-        <div className={classes.middleNav}>
-          <Hidden smDown>
-            {renderLink('vote', 'vote', 'vote-yea', classes)}
-            {renderLink('dashboard', t('stats'), 'chart-bar', classes)}
-            {renderLink('docs', 'docs', 'book', classes)}
-          </Hidden>
-          {renderLink('buy', t('buy'), 'dollar-sign', classes)}
-          {renderBoost(classes)}
-        </div>
 
         <Hidden smDown implementation="css">
           <div className={classes.collapse}>{links}</div>
@@ -82,20 +71,9 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           }}
           onClose={handleDrawerToggle}
         >
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerToggle}
-            className={classes.closeButtonDrawer}
-          >
-            <Close />
-          </IconButton>
           <div className={classes.appResponsive}>{links}</div>
           <div style={{ textAlign: 'center' }}>
-            <LinkSidebar name="vote" label="vote" icon="vote-yea" classes={classes} />
-            <LinkSidebar name="dashboard" label={t('stats')} icon="chart-bar" classes={classes} />
             <LinkSidebar name="docs" label="docs" icon="book" classes={classes} />
-            <LinkSidebar name="buy" label={t('buy')} icon="dollar-sign" classes={classes} />
             <IconButton onClick={setNightMode} className={classes.icon}>
               {isNightMode ? <WbSunny /> : <NightsStay />}
             </IconButton>

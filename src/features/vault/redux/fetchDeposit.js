@@ -9,7 +9,7 @@ import { deposit, depositBnb } from '../../web3';
 
 export function fetchDeposit({ address, web3, isAll, amount, contractAddress }) {
   const index = contractAddress;
-
+  console.log(address, amount, contractAddress)
   return dispatch => {
     dispatch({
       type: VAULT_FETCH_DEPOSIT_BEGIN,

@@ -93,7 +93,7 @@ const PoolDetails = ({ vaultId }) => {
     );
   }, [pool, launchpool, t]);
 
-  const balanceSingle = byDecimals(tokens[pool.token].tokenBalance, pool.tokenDecimals);
+  const balanceSingle = byDecimals(tokens[pool.token].tokenBalance, pool.earnTokenDecimals);
   const sharesBalance = new BigNumber(tokens[pool.earnedToken].tokenBalance);
   const apy = apys[pool.id] || { totalApy: 0 };
 
@@ -101,7 +101,7 @@ const PoolDetails = ({ vaultId }) => {
     balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';
   const deposited = byDecimals(
     sharesBalance.multipliedBy(new BigNumber(pool.pricePerFullShare)),
-    pool.tokenDecimals
+    pool.earnTokenDecimals
   );
   const depositedUsd =
     deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';

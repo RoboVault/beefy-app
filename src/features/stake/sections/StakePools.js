@@ -266,7 +266,7 @@ export default function StakePools(props) {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Once you stake in any of Beefy Finance vaults, you get in return something called
+                Once you stake in any of RoboVault vaults, you get in return something called
                 mooTokens. These are different depending on the vault you participate in, this can
                 be called ‘mooBIFI’ or ‘mooAutoCake’. Basically, these are receipts for the funds
                 you deposited. They have no value, they’re just a way to show that you have a

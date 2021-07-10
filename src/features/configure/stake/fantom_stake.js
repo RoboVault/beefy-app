@@ -27,8 +27,8 @@ export const fantomStakePools = [
         text: "You probably already knew that Beefy is the most trusted multi-chain Yield optimizer. But did you know that Beefy has its own token? $BIFI has a maximum supply of 80000 tokens and there is no way to mint more. Everyone who holds our own $BIFI token can not only do cool stuff like create and vote on proposals, they also get a share of all harvests done, every hour, every day on all our +120 vaults. That's a lot of FTM that goes straight to our $BIFI holders. All you have to do is stake your $BIFI in this vault, it’s that simple, come back and harvest your FTM whenever you need it! (You can still vote on proposals even though you have staked your $BIFI here).",
         website: 'https://app.beefy.finance',
         social: {
-          telegram: 'http://t.me/beefyfinance',
-          twitter: 'https://twitter.com/beefyfinance',
+          telegram: 'http://t.me/robovault',
+          twitter: 'https://twitter.com/robo-vault',
         },
       },
     ],
@@ -93,8 +93,8 @@ export const fantomStakePools = [
         text: "You probably already knew that Beefy is the most trusted multi-chain Yield optimizer. But did you know that Beefy has its own token? $BIFI has a maximum supply of 80000 tokens and there is no way to mint more. Everyone who holds our own $BIFI token can not only do cool stuff like create and vote on proposals, they also get a share of all harvests done, every hour, every day on all our +120 vaults. That's a lot of FTM that goes straight to our $BIFI holders. All you have to do is stake your $BIFI in this vault, it’s that simple, come back and harvest your FTM whenever you need it! (You can still vote on proposals even though you have staked your $BIFI here).",
         website: 'https://app.beefy.finance',
         social: {
-          telegram: 'http://t.me/beefyfinance',
-          twitter: 'https://twitter.com/beefyfinance',
+          telegram: 'http://t.me/robovault',
+          twitter: 'https://twitter.com/robo-vault',
         },
       },
     ],

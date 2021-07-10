@@ -16,7 +16,7 @@
   "Vault-DepositButtonAll": "Depositar Todo",
   "Vault-DepositTokensNote": "Tu recibirás {{mooToken}} a modo de recibo por tu deposito de {{assetToken}}. El recibo es necesario para retirar tus {{assetToken}}, no comercies o transfieras el {{mooToken}} a extraños!",
   "Vault-DepositFee": "Hay una tarifa de deposito {{depositFee}}, no hay tarifa de retiro",
-  "Vault-Deposited": "Depositado",
+  "Vault-Holdings": "Depositado",
   "Vault-DepositSuccess": "Deposito exitoso",
   "Vault-DepositError": "Error de depósito: {{error}}",
   "Vault-DepositScenario": "El depósito resultará en:",

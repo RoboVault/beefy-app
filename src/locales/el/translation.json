@@ -16,7 +16,7 @@
   "Vault-DepositButtonAll": "Κατάθεση όλων",
   "Vault-DepositTokensNote": "Θα λάβετε {{mooToken}} token ως απόδειξη της κατάθεσης {{assetToken}}. Η απόδειξη είναι απαραίτητη για την ανάληψη των {{assetToken}} σας, μην ανταλλάξετε ή στείλετε τα {{mooToken}} σας σε αγνώστους!",
   "Vault-DepositFee": "Υπάρχουν {{depositFee}} τέλη κατάθεσης, δεν υπάρχουν τέλη ανάληψης.",
-  "Vault-Deposited": "Κατατεθειμένα",
+  "Vault-Holdings": "Κατατεθειμένα",
   "Vault-DepositSuccess": "Επιτυχής κατάθεση",
   "Vault-DepositError": "Αποτυχία κατάθεσης: {{error}}",
   "Vault-DepositScenario": "Η κατάθεση θα έχει ως αποτέλεσμα:",

@@ -18,7 +18,7 @@
   "Vault-DepositButtonAll": "Hepsini Yatır",
   "Vault-DepositTokensNote": "Yatıracağınız {{assetToken}} varlıkları için makbuz olarak {{mooToken}} tokenleri teslim alacaksınız. Bu tokenler {{assetToken}} varlıklarınızı geri almanız için gereklidir, {{mooToken}} tokenlerinizi takaslamayın veya tanımadıklarınıza göndermeyin.  ",
   "Vault-DepositFee": "{{depositFee}} yatırma harcı vardır, çekme harcı yoktur",
-  "Vault-Deposited": "Yatırılan",
+  "Vault-Holdings": "Yatırılan",
   "Vault-DepositSuccess": "Yatırma başarılı",
   "Vault-DepositError": "Yatırma hatası: {{error}}",
   "Vault-DepositScenario": "Yatırma gerçekleştirilirken:",

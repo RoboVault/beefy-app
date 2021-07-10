@@ -2,7 +2,7 @@ export const bscPools = [
   {
     id: 'bifi-maxi',
     logo: 'single-assets/BIFI.png',
-    name: 'BIFI Maxi',
+    name: 'RoboVaulti',
     token: 'BIFI',
     tokenDescription: 'Beefy.Finance',
     tokenAddress: '0xCa3F508B8e4Dd382eE878A314789373D80A5190A',

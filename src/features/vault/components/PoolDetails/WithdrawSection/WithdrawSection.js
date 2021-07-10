@@ -49,7 +49,7 @@ const WithdrawSection = ({ pool, index, sharesBalance }) => {
   const { fetchZapWithdrawEstimate, fetchZapEstimatePending } = useFetchZapEstimate();
   const { tokens, fetchBalances, fetchPairReverves } = useFetchBalances();
 
-  const sharesDecimals = pool.tokenDecimals;
+  const sharesDecimals = pool.earnedTokenDecimals;
   const sharesByDecimals = byDecimals(sharesBalance, sharesDecimals);
   const underliyngBalance = sharesByDecimals
     .multipliedBy(pool.pricePerFullShare)
@@ -158,7 +158,7 @@ const WithdrawSection = ({ pool, index, sharesBalance }) => {
       amount = underliyngBalance
         .times(sliderInt)
         .div(100)
-        .decimalPlaces(pool.tokenDecimals, BigNumber.ROUND_DOWN);
+        .decimalPlaces(pool.earnedTokenDecimals, BigNumber.ROUND_DOWN);
       input = amount.decimalPlaces(8, BigNumber.ROUND_DOWN).toFormat();
     }
     if (sliderInt >= 99) {
@@ -321,11 +321,11 @@ const WithdrawSection = ({ pool, index, sharesBalance }) => {
       className={classes.sliderDetailContainer}
     >
       <div className={classes.showDetailLeft}>
-        {t('Vault-Deposited')}:{' '}
+        {t('Vault-Holdings')}:{' '}
         <a onClick={handleMax} className={classes.balanceMax}>
           {byDecimals(
             sharesBalance.multipliedBy(new BigNumber(pool.pricePerFullShare)),
-            pool.tokenDecimals
+            pool.earnedTokenDecimals
           ).toFormat(8)}{' '}
           {pool.token}
         </a>

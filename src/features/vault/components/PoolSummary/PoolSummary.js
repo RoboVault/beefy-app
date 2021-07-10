@@ -59,7 +59,7 @@ const PoolSummary = ({
     balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';
   const deposited = byDecimals(
     sharesBalance.multipliedBy(new BigNumber(pool.pricePerFullShare)),
-    pool.tokenDecimals
+    pool.earnedTokenDecimals
   );
   const depositedUsd =
     deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';

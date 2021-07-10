@@ -13,6 +13,7 @@ pools.forEach(
       tokenDecimals,
       tokenAddress,
       earnedToken,
+      earnedTokenDecimals,
       earnContractAddress,
       earnedTokenAddress,
       withdrawalFee,
@@ -35,7 +36,7 @@ pools.forEach(
     };
     tokens[earnedToken] = {
       symbol: earnedToken,
-      decimals: 18,
+      decimals: earnedTokenDecimals,
       tokenAddress: earnedTokenAddress,
       tokenBalance: 0,
       allowance: {

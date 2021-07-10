@@ -16,7 +16,7 @@
   "Vault-DepositButtonAll": "Alles einzahlen",
   "Vault-DepositTokensNote": "Sie erhalten {{mooToken}}-Token als Quittung für Ihr eingezahltes Guthaben {{assetToken}}. Das Token wird für die Auszahlung Ihrer {{assetToken}} benötigt; handeln oder übertragen Sie das {{mooToken}} nicht an Dritte!",
   "Vault-DepositFee": "Es fällt eine {{depositFee}} Einzahlungsgebühr an, keine Auszahlungsgebühr",
-  "Vault-Deposited": "Eingezahlt",
+  "Vault-Holdings": "Eingezahlt",
   "Vault-DepositSuccess": "Einzahlung erfolgreich",
   "Vault-DepositError": "Einzahlung fehlgeschlagen: {{error}}",
   "Vault-DepositScenario": "Die Einzahlung führt zu:",

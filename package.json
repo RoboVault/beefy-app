@@ -1,7 +1,7 @@
 {
-  "name": "beefy-app",
+  "name": "robo-vault",
   "version": "1.1.0",
-  "repository": "beefyfinance/beefy-app",
+  "repository": "robotvault/robo-vault-app",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -49,8 +49,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "yarn validate && react-scripts build",
-    "validate": "node ./scripts/validatePools.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install"

@@ -77,23 +77,8 @@ const Filters = ({
           />
         </FormControl>
       </Grid>
-
-      <Grid item xs={6} sm={4} md={3}>
-        <FormControl>
-          <FormControlLabel
-            className={classes.label}
-            control={
-              <Checkbox
-                checked={!filters.hideDecomissioned}
-                onChange={() => toggleFilter('hideDecomissioned')}
-                color="primary"
-              />
-            }
-            // TODO: translate labels
-            label={t('Retired-Vaults')}
-          />
-        </FormControl>
-      </Grid>
+      
+ 
 
       <Grid item xs={6} sm={4} md={3}>
         <FormControl>
@@ -112,26 +97,7 @@ const Filters = ({
         </FormControl>
       </Grid>
 
-      <Grid item xs={6} sm={4} md={3}>
-        <FormControl>
-          <FormControlLabel
-            className={classes.label}
-            control={
-              <Checkbox
-                checked={filters.showBoosted}
-                onChange={() => toggleFilter('showBoosted')}
-                color="primary"
-              />
-            }
-            label={
-              <Box className={classes.boost}>
-                {t('Boost')}
-                <Avatar className={classes.fire} src={require('images/stake/fire.png')} />
-              </Box>
-            }
-          />
-        </FormControl>
-      </Grid>
+
 
       <Grid item xs={6} sm={4} md={3}>
         <FormControl className={classes.selectorContainer}>
@@ -157,33 +123,7 @@ const Filters = ({
         </FormControl>
       </Grid>
 
-      <Grid item xs={6} sm={4} md={3}>
-        <FormControl className={classes.selectorContainer}>
-          <InputLabel id="select-vault-type-label" className={classes.selectorLabel}>
-            {t('Filters-Vault-Type')}
-          </InputLabel>
-          <Select
-            value={vaultType}
-            onChange={handleVaultTypeChange}
-            className={classes.selector}
-            id="select-vault-type"
-            labelId="select-vault-type-label"
-          >
-            <MenuItem key={'All'} value={'All'}>
-              {t('Filters-All')}
-            </MenuItem>
-            <MenuItem key={'Singles'} value={'Singles'}>
-              {t('Single Assets')}
-            </MenuItem>
-            <MenuItem key={'StableLPs'} value={'StableLPs'}>
-              {t('Stable LPs')}
-            </MenuItem>
-            <MenuItem key={'Stables'} value={'Stables'}>
-              {t('Stables')}
-            </MenuItem>
-          </Select>
-        </FormControl>
-      </Grid>
+
 
       <Grid item xs={6} sm={4} md={3}>
         <FormControl className={classes.selectorContainer}>
@@ -208,24 +148,7 @@ const Filters = ({
         </FormControl>
       </Grid>
 
-      <Grid item xs={6} sm={4} md={3}>
-        <FormControl className={classes.selectorContainer}>
-          <InputLabel id="select-order-label" className={classes.selectorLabel}>
-            {t('Filters-Sort')}
-          </InputLabel>
-          <Select
-            value={order}
-            onChange={handleOrderChange}
-            className={classes.selector}
-            id="select-order"
-            labelId="select-order-label"
-          >
-            <MenuItem value={'default'}>{t('Filters-Default')}</MenuItem>
-            <MenuItem value={'apy'}>APY</MenuItem>
-            <MenuItem value={'tvl'}>TVL</MenuItem>
-          </Select>
-        </FormControl>
-      </Grid>
+
     </Grid>
   );
 };

@@ -60,14 +60,15 @@ const HeaderLinks = ({
 
   const handleClick = event => {
     switch (event) {
-      case 'العربية':
-        return i18n.changeLanguage('ar').then(() => setLanguage(event));
+      /*
       case 'Deutsch':
         return i18n.changeLanguage('de').then(() => setLanguage(event));
       case 'Ελληνικά':
         return i18n.changeLanguage('el').then(() => setLanguage(event));
+      */
       case 'English':
         return i18n.changeLanguage('en').then(() => setLanguage(event));
+      /*
       case 'Español':
         return i18n.changeLanguage('es').then(() => setLanguage(event));
       case 'Français':
@@ -97,6 +98,7 @@ const HeaderLinks = ({
       case 'Українська':
         return i18n.changeLanguage('uk').then(() => setLanguage(event));
       // TODO: more translations
+      */
       default:
         return;
     }
@@ -122,9 +124,9 @@ const HeaderLinks = ({
           }}
           onClick={handleClick}
           dropdownList={[
-            'العربية',
-            'Deutsch',
+            //'Deutsch',
             'English',
+            /*
             'Ελληνικά',
             'Español',
             'Français',
@@ -140,10 +142,11 @@ const HeaderLinks = ({
             'Türkçe',
             'Українська',
             '中文',
+            */
             // TODO: more translations
             { divider: true },
             <a
-              href="https://discord.gg/sj3drZd7dh"
+              href="https://github.com/robovault/robo-vault-app/tree/master/src/locales"
               target="_blank"
               rel="noopener noreferrer"
               className={classes.cta}
