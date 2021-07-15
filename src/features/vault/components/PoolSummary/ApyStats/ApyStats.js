@@ -186,16 +186,6 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
           className={`tooltip-toggle ${itemInnerClasses}`}
         />
       </Grid>
-      <Grid item xs={4} className={itemClasses}>
-        <LabeledStatWithTooltip
-          value={formatted.totalDaily}
-          label={t('Vault-APYDaily')}
-          tooltip={<InfoTooltip/>}
-          boosted={isBoosted ? formatted.boostedTotalDaily : ''}
-          isLoading={isLoading}
-          className={`tooltip-toggle ${itemInnerClasses}`}
-        />
-      </Grid>
     </>
   );
 };

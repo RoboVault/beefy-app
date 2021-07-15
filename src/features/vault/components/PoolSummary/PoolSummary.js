@@ -119,14 +119,14 @@ const PoolSummary = ({
             className={classes.itemInner}
           />
         </Grid>
-        <ApyStats
-          apy={apy}
-          launchpoolApr={launchpool && launchpool.apy ? launchpool.apy : null}
-          isLoading={!fetchApysDone}
-          itemClasses={`${classes.item} ${classes.itemStats}`}
-          itemInnerClasses={classes.itemInner}
-        />
-        <Grid item xs={4} className={`${classes.item} ${classes.itemStats}`}>
+          <ApyStats
+            apy={apy}
+            launchpoolApr={launchpool && launchpool.apy ? launchpool.apy : null}
+            isLoading={!fetchApysDone}
+            itemClasses={`${classes.item} ${classes.itemStats}`}
+            itemInnerClasses={classes.itemInner}
+          />
+        <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStat
             value={formatTvl(pool.tvl, pool.oraclePrice)}
             label={t('Vault-TVL')}
