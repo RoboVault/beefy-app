@@ -41,7 +41,8 @@ export function fetchVaultsData({ web3, pools }) {
       ])
         .then(data => {
           const newPools = pools.map((pool, i) => {
-            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, pool.earnedTokenDecimals).toNumber();
+            // pricePerFullShare is hardcoded with 6 decimals for all vaults
+            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, 6).toNumber();
             return {
               pricePerFullShare: new BigNumber(pricePerFullShare).toNumber() || 1,
               tvl: byDecimals(data[0][i].tvl, pool.tokenDecimals).toNumber(),
