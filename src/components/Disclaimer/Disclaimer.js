@@ -15,7 +15,9 @@ const Disclaimer = () => {
   return (
     <Grid container item className={classes.root} justify="center">
       {
-        //<Typography className={classes.disclaimer}>{t('Disclaimer')}</Typography>
+        <Typography className={classes.disclaimer}>{t('Disclaimer')} 
+            More details <a href="https://docs.robo-vault.com/robovault/risks" rel="noreferrer"> here</a>.
+        </Typography>
       }
     </Grid>
   );
