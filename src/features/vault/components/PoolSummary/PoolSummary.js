@@ -55,6 +55,7 @@ const PoolSummary = ({
     );
   }, [pool, launchpool, t]);
 
+  apy.totalApy = pool.apy
   const balanceUsd =
     balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';
   const deposited = byDecimals(
