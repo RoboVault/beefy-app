@@ -7,6 +7,7 @@ import { isNaN } from '../../../../helpers/bignumber';
 import LabeledStat from '../LabeledStat/LabeledStat';
 import { Fade, Tooltip } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(styles);
 
@@ -34,6 +35,18 @@ const BreakdownTooltip = memo(({ rows }) => {
         ))}
       </tbody>
     </table>
+  );
+});
+
+const InfoTooltip = memo(({ rows }) => {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Typography className={classes.label} variant="body3">
+        {'Calculated Daily - Live APR coming soon'}
+      </Typography>
+    </div>
   );
 });
 
@@ -148,9 +161,9 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
     values.totalDaily = yearlyToDaily(values.totalApy);
   }
 
+  needsApyTooltip = true;
+  needsDailyTooltip = true;
   if (isBoosted) {
-    needsApyTooltip = true;
-    needsDailyTooltip = true;
     values.boostApr = launchpoolApr;
     values.boostDaily = launchpoolApr / 365;
     values.boostedTotalApy = values.boostApr ? values.totalApy + values.boostApr : 0;
@@ -167,22 +180,8 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
         <LabeledStatWithTooltip
           value={formatted.totalApy}
           label={t('Vault-APY')}
-          tooltip={
-            !isLoading && needsApyTooltip ? <YearlyBreakdownTooltip rates={formatted} /> : null
-          }
+          tooltip={<InfoTooltip/>}
           boosted={isBoosted ? formatted.boostedTotalApy : ''}
-          isLoading={isLoading}
-          className={`tooltip-toggle ${itemInnerClasses}`}
-        />
-      </Grid>
-      <Grid item xs={4} className={itemClasses}>
-        <LabeledStatWithTooltip
-          value={formatted.totalDaily}
-          label={t('Vault-APYDaily')}
-          tooltip={
-            !isLoading && needsDailyTooltip ? <DailyBreakdownTooltip rates={formatted} /> : null
-          }
-          boosted={isBoosted ? formatted.boostedTotalDaily : ''}
           isLoading={isLoading}
           className={`tooltip-toggle ${itemInnerClasses}`}
         />
