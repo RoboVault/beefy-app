@@ -23,7 +23,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://swap.spiritswap.finance/',
-    apy: 0.2812,
+    apy: 0.2869,
   },
   {
     id: 'fantom-usdc-spooky',
@@ -49,7 +49,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://spookyswap.finance/',
-    apy: 0.4470,
+    apy: 0.2940,
   },
   {
     id: 'fantom-wbtc-spirit',
@@ -75,7 +75,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.05%',
     buyTokenUrl: 'https://swap.spiritswap.finance/',
-    apy: 0.2567,
+    apy: 0.3143,
   },
   {
     id: 'fantom-wbtc-spooky',
@@ -101,6 +101,6 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.05%',
     buyTokenUrl: 'https://spookyswap.finance/',
-    apy: 0.2631,
+    apy: 0.4996,
   },
 ];
