@@ -38,7 +38,7 @@ const NetworksProvider = ({ children }) => {
       name: 'FANTOM',
       asset: 'FTM',
       id: '250',
-      url: 'https://fantom.beefy.finance',
+      url: 'https://robo-vault.com',
     },
   ];
 

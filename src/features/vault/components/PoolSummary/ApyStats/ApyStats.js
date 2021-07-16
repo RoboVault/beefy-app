@@ -177,6 +177,8 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
   return (
     <>
       <Grid item xs={4} className={itemClasses}>
+      </Grid>
+      <Grid item xs={4} className={itemClasses}>
         <LabeledStatWithTooltip
           value={formatted.totalApy}
           label={t('Vault-APY')}

@@ -12581,7 +12581,7 @@ export const bscPools = [
     tokenDescription: 'PancakeSwap',
     tokenAddress: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     tokenDecimals: 18,
-    tokenDescriptionUrl: 'https://docs.beefy.finance/beefyfinance/products/pancake-swap#cake-smart',
+    tokenDescriptionUrl: 'https://docs.robo-vault.com/products/pancake-swap#cake-smart',
     earnedToken: 'mooCakeSmart',
     earnedTokenAddress: '0xB0BDBB9E507dBF55f4aC1ef6ADa3E216202e06FD',
     earnContractAddress: '0xB0BDBB9E507dBF55f4aC1ef6ADa3E216202e06FD',
@@ -13307,7 +13307,7 @@ export const bscPools = [
     tokenAddress: '0xa5e5eeB6b51fa0fDc59915C81d75C83470BFA4f0',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/thugs#farming-drugs-with-guns-bnb-lp',
+      'https://docs.robo-vault.com/products/thugs#farming-drugs-with-guns-bnb-lp',
     earnedToken: 'mooStreetGUNS-BNBV2',
     earnedTokenAddress: '0x68aE2aB6448884714DDf11C8d55ea7578C65D502',
     earnContractAddress: '0x68aE2aB6448884714DDf11C8d55ea7578C65D502',
@@ -13428,7 +13428,7 @@ export const bscPools = [
     tokenAddress: '0x5BcE5d58682f15541EFc72d8f56C7d6221d541f1',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/thugs#farming-drugs-with-drugs-bnb-lp',
+      'https://docs.robo-vault.com/products/thugs#farming-drugs-with-drugs-bnb-lp',
     earnedToken: 'mooStreetDRUGS-BNB',
     earnedTokenAddress: '0xa4aB709f5eB75f3213734fC227D9e27352d1DB6c',
     earnContractAddress: '0xa4aB709f5eB75f3213734fC227D9e27352d1DB6c',
@@ -13452,7 +13452,7 @@ export const bscPools = [
     tokenAddress: '0xa5e5eeB6b51fa0fDc59915C81d75C83470BFA4f0',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/thugs#farming-drugs-with-guns-bnb-lp',
+      'https://docs.robo-vault.com/products/thugs#farming-drugs-with-guns-bnb-lp',
     earnedToken: 'mooStreetGUNS-BNB',
     earnedTokenAddress: '0xA2bcB1D7955AEa2F5B93C308E199337a77E7bAd4',
     earnContractAddress: '0xA2bcB1D7955AEa2F5B93C308E199337a77E7bAd4',
@@ -13480,7 +13480,7 @@ export const bscPools = [
     tokenAddress: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-cake-with-cake',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-cake-with-cake',
     earnedToken: 'mooCake',
     earnedTokenAddress: '0xc713ca7cb8edfE238ea652D772d41dde47A9a62d',
     earnContractAddress: '0xc713ca7cb8edfE238ea652D772d41dde47A9a62d',
@@ -13505,7 +13505,7 @@ export const bscPools = [
     tokenAddress: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-twt-with-cake',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-twt-with-cake',
     earnedToken: 'mooCakeTWTV2',
     earnedTokenAddress: '0x260879777DB293541DbC9a27c3C2fAD9c9bb48D3',
     earnContractAddress: '0x260879777DB293541DbC9a27c3C2fAD9c9bb48D3',
@@ -13530,7 +13530,7 @@ export const bscPools = [
     tokenAddress: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-hard-with-cake',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-hard-with-cake',
     earnedToken: 'mooCakeHARD',
     earnedTokenAddress: '0x4B4e5F2CeEdfF00D2DD13874714C1Ef6Ea1Cd8a7',
     earnContractAddress: '0x4B4e5F2CeEdfF00D2DD13874714C1Ef6Ea1Cd8a7',
@@ -13555,7 +13555,7 @@ export const bscPools = [
     tokenAddress: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-cake-with-cake-bnb-lp',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-cake-with-cake-bnb-lp',
     earnedToken: 'mooPancakeCAKE-BNB',
     earnedTokenAddress: '0x502AB55Cf22f38c4fd8663dEE041A96B72264c53',
     earnContractAddress: '0x502AB55Cf22f38c4fd8663dEE041A96B72264c53',
@@ -13582,7 +13582,7 @@ export const bscPools = [
     tokenAddress: '0xaeBE45E3a03B734c68e5557AE04BFC76917B4686',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-cake-with-link-bnb-lp',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-cake-with-link-bnb-lp',
     earnedToken: 'mooPancakeLINK-BNB',
     earnedTokenAddress: '0xaB9C4a0fD179315b005a5f6D3793cb30Af718152',
     earnContractAddress: '0xaB9C4a0fD179315b005a5f6D3793cb30Af718152',
@@ -13609,7 +13609,7 @@ export const bscPools = [
     tokenAddress: '0x1B96B92314C44b159149f7E0303511fB2Fc4774f',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-cake-with-busd-bnb-lp',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-cake-with-busd-bnb-lp',
     earnedToken: 'mooPancakeBNB-BUSD',
     earnedTokenAddress: '0x0c36Bee5cF5E5b1BE5371574cEBF9A5f01DE5Fc4',
     earnContractAddress: '0x0c36Bee5cF5E5b1BE5371574cEBF9A5f01DE5Fc4',
@@ -13636,7 +13636,7 @@ export const bscPools = [
     tokenAddress: '0xc15fa3E22c912A276550F3E5FE3b0Deb87B55aCd',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-cake-with-usdt-busd-lp',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-cake-with-usdt-busd-lp',
     earnedToken: 'mooPancakeUSDT-BUSD',
     earnedTokenAddress: '0x348039C69B5fD7b333CE0a17E8361E501D2e3fa8',
     earnContractAddress: '0x348039C69B5fD7b333CE0a17E8361E501D2e3fa8',
@@ -13783,7 +13783,7 @@ export const bscPools = [
     tokenAddress: '0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/fryworld#farming-fries-with-burgers',
+      'https://docs.robo-vault.com/products/fryworld#farming-fries-with-burgers',
     earnedToken: 'mooFryBURGERv2',
     earnedTokenAddress: '0x2fd5f579e2cF9e3cb8127BBAd1B52c25750b1aCE',
     earnContractAddress: '0x2fd5f579e2cF9e3cb8127BBAd1B52c25750b1aCE',
@@ -13808,7 +13808,7 @@ export const bscPools = [
     tokenAddress: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     tokenDecimals: 18,
     tokenDescriptionUrl:
-      'https://docs.beefy.finance/beefyfinance/products/pancake-swap#farming-twt-with-cake',
+      'https://docs.robo-vault.com/products/pancake-swap#farming-twt-with-cake',
     earnedToken: 'mooCakeTWT',
     earnedTokenAddress: '0x214e640c638fbe68Fb24e11BfBd8Cd7d6cb8E37b',
     earnContractAddress: '0x214e640c638fbe68Fb24e11BfBd8Cd7d6cb8E37b',
