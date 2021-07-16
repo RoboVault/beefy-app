@@ -112,7 +112,7 @@ const LinkSidebar = ({ name, label, icon, classes }) => (
 );
 
 const getLinkUrl = name => {
-  return name === 'buy' ? getNetworkBuyLink() : `https://${name}.beefy.finance`;
+  return name === 'buy' ? getNetworkBuyLink() : `https://${name}.robo-vault.com`;
 };
 
 export default Header;
