@@ -22,7 +22,9 @@ import { useConnectWallet, useDisconnectWallet } from './redux/hooks';
 import useNightMode from './hooks/useNightMode';
 import createTheme from './jss/appTheme';
 import { networkSetup } from 'common/networkSetup';
+import ReactGA from 'react-ga';
 
+ReactGA.initialize("G-TMSH7GQS2X");
 const useStyles = makeStyles(appStyle);
 
 export default function App({ children }) {
