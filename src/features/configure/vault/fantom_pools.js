@@ -22,7 +22,7 @@ export const fantomPools = [
     assets: ['USDC'],
     callFee: 0.05,
     withdrawalFee: '0.00%',
-    buyTokenUrl: 'https://swap.spiritswap.finance/',
+    buyTokenUrl: 'https://ftmscan.com/address/0x166474b2b4eed48a4e18dc034dbf1deef6e3380c',
     apy: 0.3131,
   },
   {
@@ -48,7 +48,7 @@ export const fantomPools = [
     assets: ['USDC'],
     callFee: 0.05,
     withdrawalFee: '0.00%',
-    buyTokenUrl: 'https://spookyswap.finance/',
+    buyTokenUrl: 'https://ftmscan.com/address/0xdc0d893338e7b00673c46dc2429fc3e725cdadac',
     apy: 0.4996,
   },
   {
@@ -73,8 +73,8 @@ export const fantomPools = [
     platform: 'CREAM + Spirit Swap',
     assets: ['BTC'],
     callFee: 0.05,
-    withdrawalFee: '0.05%',
-    buyTokenUrl: 'https://swap.spiritswap.finance/',
+    withdrawalFee: '0.00%',
+    buyTokenUrl: 'https://ftmscan.com/address/0x207fd5079cf06dc741752b32e26f73e88e836837',
     apy: 0.2869,
   },
   {
@@ -99,8 +99,8 @@ export const fantomPools = [
     platform: 'CREAM + Spooky Swap',
     assets: ['BTC'],
     callFee: 0.05,
-    withdrawalFee: '0.05%',
-    buyTokenUrl: 'https://spookyswap.finance/',
+    withdrawalFee: '0.00%',
+    buyTokenUrl: 'https://ftmscan.com/address/0x03d2ce8813345382896c624d826cd28b631da28c',
     apy: 0.294,
   },
 ];
