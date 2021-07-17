@@ -23,7 +23,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x166474b2b4eed48a4e18dc034dbf1deef6e3380c',
-    apy: 0.3131,
+    apy: 0.2624,
   },
   {
     id: 'fantom-usdc-spooky',
@@ -49,7 +49,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0xdc0d893338e7b00673c46dc2429fc3e725cdadac',
-    apy: 0.4996,
+    apy: 0.494,
   },
   {
     id: 'fantom-wbtc-spirit',
@@ -75,7 +75,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x207fd5079cf06dc741752b32e26f73e88e836837',
-    apy: 0.2869,
+    apy: 0.2518,
   },
   {
     id: 'fantom-wbtc-spooky',
@@ -101,6 +101,6 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x03d2ce8813345382896c624d826cd28b631da28c',
-    apy: 0.294,
+    apy: 0.2595,
   },
 ];
