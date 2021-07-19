@@ -38,13 +38,25 @@ const BreakdownTooltip = memo(({ rows }) => {
   );
 });
 
-const InfoTooltip = memo(({ rows }) => {
+const MaxApyTooltip = memo(({ rows }) => {
   const classes = useStyles();
 
   return (
     <div>
       <Typography className={classes.label} variant="body3">
-        {'Calculated Daily - Live APR coming soon'}
+        {'This is the max APY possible with no IL. Updated daily - live APY coming soon'}
+      </Typography>
+    </div>
+  );
+});
+
+const Apy24HrTooltip = memo(({ rows }) => {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Typography className={classes.label} variant="body3">
+        {'Actual APY performance from the last 24hrs. Updated daily - live APY coming soon'}
       </Typography>
     </div>
   );
@@ -140,7 +152,8 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
   let needsApyTooltip = false;
   let needsDailyTooltip = false;
 
-  values.totalApy = apy.totalApy;
+  values.maxApy = apy.maxApy;
+  values.apy24hrs = apy.apy24hrs;
 
   if ('vaultApr' in apy && apy.vaultApr) {
     needsApyTooltip = true;
@@ -177,12 +190,20 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
   return (
     <>
       <Grid item xs={4} className={itemClasses}>
+        <LabeledStatWithTooltip
+          value={formatted.maxApy}
+          label={t('Vault-MaxAPY')}
+          tooltip={<MaxApyTooltip/>}
+          boosted={isBoosted ? formatted.boostedTotalApy : ''}
+          isLoading={isLoading}
+          className={`tooltip-toggle ${itemInnerClasses}`}
+        />
       </Grid>
       <Grid item xs={4} className={itemClasses}>
         <LabeledStatWithTooltip
-          value={formatted.totalApy}
-          label={t('Vault-APY')}
-          tooltip={<InfoTooltip/>}
+          value={formatted.apy24hrs}
+          label={t('Vault-APYDaily')}
+          tooltip={<Apy24HrTooltip/>}
           boosted={isBoosted ? formatted.boostedTotalApy : ''}
           isLoading={isLoading}
           className={`tooltip-toggle ${itemInnerClasses}`}

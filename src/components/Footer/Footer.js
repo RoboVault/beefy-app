@@ -45,8 +45,6 @@ const Footer = () => {
         </a>
       </div>
 
-
-
       <div className={classes.column}>
         <div className={classes.title}>{t('Socials')}</div>
         <a
@@ -59,7 +57,16 @@ const Footer = () => {
 
           <span>twitter</span>
         </a>
- 
+
+        <a
+          href="https://discord.gg/5FwsPJWjSK"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.link}
+        >
+          <i className={`fab fa-discord ${classes.linkIcon}`}></i>
+          <span>discord</span>
+        </a>
       </div>
     </div>
   );
