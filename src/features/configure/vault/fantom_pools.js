@@ -131,7 +131,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x7370910500EDb5c5f9e59c2c2F7aCe11dBd7D1D5',
-    maxApy: 30.61,
+    maxApy: 0.3061,
     apy24hrs: 0.00,
   },
 ];
