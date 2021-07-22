@@ -29,6 +29,21 @@ export const formatTvl = (tvl, oraclePrice) => {
   return '$' + num.toFixed(2) + units[order];
 };
 
+export const formatReserves = (tvl, oraclePrice) => {
+  if (oraclePrice) {
+    tvl = BigNumber(tvl).times(oraclePrice).toFixed(2);
+  }
+
+  let order = Math.floor(Math.log10(tvl) / 3);
+  if (order < 0) {
+    order = 0;
+  }
+
+  const num = tvl / 1000 ** order;
+
+  return num.toFixed(2) + units[order];
+};
+
 export const formatGlobalTvl = tvl => formatTvl(tvl, 1);
 
 export const calcDaily = apy => {

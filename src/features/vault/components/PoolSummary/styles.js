@@ -33,12 +33,12 @@ const styles = theme => ({
       maxWidth: '50%',
     },
     [theme.breakpoints.up('md')]: {
-      flexBasis: '37%',
-      maxWidth: '37%',
+      flexBasis: '35%',
+      maxWidth: '35%',
     },
     [theme.breakpoints.up('lg')]: {
-      flexBasis: '30%',
-      maxWidth: '30%',
+      flexBasis: '25%',
+      maxWidth: '25%',
     },
   },
   itemBalances: {
@@ -47,12 +47,12 @@ const styles = theme => ({
       maxWidth: '25%',
     },
     [theme.breakpoints.up('md')]: {
-      flexBasis: '15%',
-      maxWidth: '15%',
+      flexBasis: '10%',
+      maxWidth: '10%',
     },
     [theme.breakpoints.up('lg')]: {
-      flexBasis: '18%',
-      maxWidth: '18%',
+      flexBasis: '17.5%',
+      maxWidth: '17.5%',
     },
   },
   itemStats: {
@@ -61,8 +61,8 @@ const styles = theme => ({
       maxWidth: '11%',
     },
     [theme.breakpoints.up('lg')]: {
-      flexBasis: '11.33%',
-      maxWidth: '11.33%',
+      flexBasis: '10%',
+      maxWidth: '10%',
     },
   },
   itemInner: {

@@ -21,6 +21,7 @@ const styles = theme => ({
     textAlign: 'center',
     position: 'absolute',
     top: '-20px',
+    left: '0px',
   },
   label: {
     fontSize: '14px',

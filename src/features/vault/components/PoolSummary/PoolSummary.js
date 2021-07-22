@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { useTranslation } from 'react-i18next';
 import BigNumber from 'bignumber.js';
 import { makeStyles } from '@material-ui/core/styles';
-import { formatTvl } from 'features/helpers/format';
+import { formatTvl, formatReserves } from 'features/helpers/format';
 import { byDecimals } from 'features/helpers/bignumber';
 import styles from './styles';
 import PoolPaused from './PoolPaused/PoolPaused';
@@ -57,14 +57,13 @@ const PoolSummary = ({
 
   apy.maxApy = pool.maxApy
   apy.apy24hrs = pool.apy24hrs
-  const balanceUsd =
-    balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';
+  const balanceUsd = balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';
   const deposited = byDecimals(
     sharesBalance.multipliedBy(new BigNumber(pool.pricePerFullShare)),
     pool.earnedTokenDecimals
   );
-  const depositedUsd =
-    deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';
+  const depositedUsd = deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';
+  const balanceReservesUsd = deposited > 0 && fetchVaultsDataDone ? formatTvl(pool.balanceReserves, pool.oraclePrice) : '';  
 
   const onSummaryClick = useCallback(
     e => {
@@ -115,8 +114,17 @@ const PoolSummary = ({
           <LabeledStat
             value={formatDecimals(deposited)}
             subvalue={depositedUsd}
-            label={t('Vault-Deposited')}
+            label={t('Vault-Holdings')}
             isLoading={!fetchBalancesDone}
+            className={classes.itemInner}
+          />
+        </Grid>
+        <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
+          <LabeledStat
+            value={formatReserves(pool.balanceReserves, 1)}
+            subvalue={balanceReservesUsd}
+            label={t('Vault-Reserves')}
+            isLoading={!fetchVaultsDataDone}
             className={classes.itemInner}
           />
         </Grid>
