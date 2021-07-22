@@ -414,55 +414,6 @@ const WithdrawSection = ({ pool, index, sharesBalance }) => {
             )}
             <div className={classes.zapNote}>
               <span>{t('Vault-WithdrawScenario')}&nbsp;</span>
-              {fetchZapEstimatePending[pool.tokenAddress] && <CircularProgress size={12} />}
-              <ol>
-                <li>
-                  {t('Vault-WithdrawScenarioRedeem', {
-                    mooToken: pool.earnedToken,
-                    poolToken: pool.token,
-                  })}
-                </li>
-                {withdrawSettings.isZap && (
-                  <li>
-                    {t('Vault-WithdrawScenarioRemoveLiquidity', {
-                      poolToken: pool.token,
-                      tokenA: pool.assets[0],
-                      tokenB: pool.assets[1],
-                    })}
-                  </li>
-                )}
-                {withdrawSettings.isSwap && (
-                  <li>
-                    {t('Vault-WithdrawScenarioSwap', {
-                      swapIn: `${convertAmountFromRawNumber(
-                        pool.swapEstimate?.amountIn || 0,
-                        withdrawSettings.swapInput.decimals
-                      )
-                        .decimalPlaces(8, BigNumber.ROUND_DOWN)
-                        .toFormat()} ${withdrawSettings.swapInput.symbol}`,
-                      swapOut: `${convertAmountFromRawNumber(
-                        pool.swapEstimate?.amountOut || 0,
-                        withdrawSettings.swapOutput.decimals
-                      )
-                        .decimalPlaces(8, BigNumber.ROUND_DOWN)
-                        .toFormat()} ${withdrawSettings.swapOutput.symbol}`,
-                      slippageTolerance: `1%`,
-                    })}
-                  </li>
-                )}
-                {withdrawSettings.isSwap && (
-                  <li>
-                    {t('Vault-WithdrawScenarioTotal', {
-                      totalOut: `${convertAmountFromRawNumber(
-                        pool.swapEstimate?.amountOut * 2 || 0,
-                        withdrawSettings.swapOutput.decimals
-                      )
-                        .decimalPlaces(8, BigNumber.ROUND_DOWN)
-                        .toFormat()} ${withdrawSettings.swapOutput.symbol}`,
-                    })}
-                  </li>
-                )}
-              </ol>
             </div>
           </div>
         )}
