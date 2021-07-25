@@ -28,6 +28,10 @@ const styles = theme => ({
     justifyContent: 'center',
   },
   itemTitle: {
+    [theme.breakpoints.up('xs')]: {
+      flexBasis: '100%',
+      maxWidth: '100%',
+    },
     [theme.breakpoints.up('sm')]: {
       flexBasis: '100%',
       maxWidth: '100%',
@@ -42,6 +46,10 @@ const styles = theme => ({
     },
   },
   itemBalances: {
+    [theme.breakpoints.up('xs')]: {
+      flexBasis: '50%',
+      maxWidth: '50%',
+    },
     [theme.breakpoints.up('sm')]: {
       flexBasis: '50%',
       maxWidth: '50%',
@@ -56,6 +64,10 @@ const styles = theme => ({
     },
   },
   itemStats: {
+    [theme.breakpoints.up('xs')]: {
+      flexBasis: '50%',
+      maxWidth: '50%',
+    },
     [theme.breakpoints.up('sm')]: {
       flexBasis: '50%',
       maxWidth: '50%',
