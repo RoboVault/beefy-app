@@ -157,8 +157,8 @@ export const fantomPools = [
     assets: ['DAI'],
     callFee: 0.05,
     withdrawalFee: '0.00%',
-    buyTokenUrl: 'https://ftmscan.com/address/0xd70dC8a6B31Ca30B248c46ED203Cd59f11157daF',
-    maxApy: 0.00,
+    buyTokenUrl: 'https://ftmscan.com/address/0x24193311B415044BF5D9b48f8EB3c3A599E0B5Cf',
+    maxApy: 0.422,
     apy24hrs: 0.00,
   },
   {
