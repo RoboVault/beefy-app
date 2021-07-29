@@ -159,7 +159,7 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x7370910500EDb5c5f9e59c2c2F7aCe11dBd7D1D5',
     maxApy: 0.3488,
-    apy24hrs: 0.168,
+    apy24hrs: 0.243,
   },
   {
     id: 'fantom-wftm-spooky',
