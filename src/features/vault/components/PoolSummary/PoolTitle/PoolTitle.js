@@ -29,6 +29,7 @@ const PoolTitle = ({
   description,
   launchpool,
   buyTokenUrl,
+  buyTokenAnalyticsUrl,
   addLiquidityUrl,
   removeLiquidityUrl,
   assets,
@@ -86,6 +87,14 @@ const PoolTitle = ({
           {buyTokenUrl ? (
             <a className={classes.url} href={buyTokenUrl} target="_blank" rel="noopener noreferrer">
               <span>{name === 'WBNB' ? t('Wrap-BNB') : t('Buy-Token')}</span>
+              {'\u00A0\u00A0'}
+            </a>
+          ) : (
+            ''
+          )}
+          {buyTokenAnalyticsUrl ? (
+            <a className={classes.url} href={buyTokenAnalyticsUrl} target="_blank" rel="noopener noreferrer">
+              <span>{'📈'}</span>
               {'\u00A0\u00A0'}
             </a>
           ) : (

@@ -98,6 +98,7 @@ const PoolSummary = ({
             addLiquidityUrl={pool.addLiquidityUrl}
             removeLiquidityUrl={pool.removeLiquidityUrl}
             buyTokenUrl={pool.buyTokenUrl}
+            buyTokenAnalyticsUrl={pool.buyTokenAnalyticsUrl}
             assets={pool.assets}
           />
         </Grid>
