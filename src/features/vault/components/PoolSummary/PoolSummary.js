@@ -54,7 +54,7 @@ const PoolSummary = ({
       />
     );
   }, [pool, launchpool, t]);
-
+  
   apy.maxApy = pool.maxApy
   apy.apy24hrs = pool.apy24hrs
   const balanceUsd = balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';
@@ -98,6 +98,7 @@ const PoolSummary = ({
             addLiquidityUrl={pool.addLiquidityUrl}
             removeLiquidityUrl={pool.removeLiquidityUrl}
             buyTokenUrl={pool.buyTokenUrl}
+            buyTokenAnalyticsUrl={pool.buyTokenAnalyticsUrl}
             assets={pool.assets}
           />
         </Grid>

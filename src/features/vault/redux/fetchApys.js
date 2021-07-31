@@ -16,13 +16,16 @@ export function fetchApys() {
 
     return new Promise((resolve, reject) => {
       const cacheBuster = getApiCacheBuster();
-      const doRequest = axios.get(`https://api.beefy.finance/apy/breakdown?_=${cacheBuster}`);
+      const url = `http://api.robo-vault.com:8080/vault?_=${cacheBuster}`
+      const doRequest = axios.get(url, {crossDomain: true});
 
       doRequest.then(
         res => {
+          const data = {}
+          res.data.forEach(e => data[e.vaultId] = e)
           dispatch({
             type: VAULT_FETCH_APYS_SUCCESS,
-            data: res.data,
+            data: data,
           });
           resolve(res);
         },

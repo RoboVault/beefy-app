@@ -28,13 +28,17 @@ const styles = theme => ({
     justifyContent: 'center',
   },
   itemTitle: {
+    [theme.breakpoints.up('xs')]: {
+      flexBasis: '50%',
+      maxWidth: '50%',
+    },
     [theme.breakpoints.up('sm')]: {
       flexBasis: '50%',
       maxWidth: '50%',
     },
     [theme.breakpoints.up('md')]: {
-      flexBasis: '35%',
-      maxWidth: '35%',
+      flexBasis: '33%',
+      maxWidth: '33%',
     },
     [theme.breakpoints.up('lg')]: {
       flexBasis: '25%',
@@ -42,13 +46,17 @@ const styles = theme => ({
     },
   },
   itemBalances: {
+    [theme.breakpoints.up('xs')]: {
+      flexBasis: '50%',
+      maxWidth: '50%',
+    },
     [theme.breakpoints.up('sm')]: {
-      flexBasis: '25%',
-      maxWidth: '25%',
+      flexBasis: '50%',
+      maxWidth: '50%',
     },
     [theme.breakpoints.up('md')]: {
-      flexBasis: '10%',
-      maxWidth: '10%',
+      flexBasis: '33%',
+      maxWidth: '33%',
     },
     [theme.breakpoints.up('lg')]: {
       flexBasis: '17.5%',
@@ -56,13 +64,21 @@ const styles = theme => ({
     },
   },
   itemStats: {
+    [theme.breakpoints.up('xs')]: {
+      flexBasis: '50%',
+      maxWidth: '50%',
+    },
+    [theme.breakpoints.up('sm')]: {
+      flexBasis: '50%',
+      maxWidth: '50%',
+    },
     [theme.breakpoints.up('md')]: {
-      flexBasis: '11%',
-      maxWidth: '11%',
+      flexBasis: '33%',
+      maxWidth: '33%',
     },
     [theme.breakpoints.up('lg')]: {
-      flexBasis: '10%',
-      maxWidth: '10%',
+      flexBasis: '13.3%',
+      maxWidth: '13.3%',
     },
   },
   itemInner: {

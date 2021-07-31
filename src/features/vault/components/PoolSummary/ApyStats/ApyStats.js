@@ -38,25 +38,13 @@ const BreakdownTooltip = memo(({ rows }) => {
   );
 });
 
-const MaxApyTooltip = memo(({ rows }) => {
+const ApyTooltip = memo(({ rows }) => {
   const classes = useStyles();
 
   return (
     <div>
       <Typography className={classes.label} variant="body3">
-        {'This is the max APY possible with no IL. Updated daily - live APY coming soon'}
-      </Typography>
-    </div>
-  );
-});
-
-const Apy24HrTooltip = memo(({ rows }) => {
-  const classes = useStyles();
-
-  return (
-    <div>
-      <Typography className={classes.label} variant="body3">
-        {'Actual APY performance from the last 24hrs. Updated daily - live APY coming soon'}
+        {'Based on the performance of the previous 72 hours'}
       </Typography>
     </div>
   );
@@ -154,6 +142,7 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
 
   values.maxApy = apy.maxApy;
   values.apy24hrs = apy.apy24hrs;
+  values.apy = apy.apy;
 
   if ('vaultApr' in apy && apy.vaultApr) {
     needsApyTooltip = true;
@@ -191,19 +180,9 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
     <>
       <Grid item xs={4} className={itemClasses}>
         <LabeledStatWithTooltip
-          value={formatted.maxApy}
-          label={t('Vault-MaxAPY')}
-          tooltip={<MaxApyTooltip/>}
-          boosted={isBoosted ? formatted.boostedTotalApy : ''}
-          isLoading={isLoading}
-          className={`tooltip-toggle ${itemInnerClasses}`}
-        />
-      </Grid>
-      <Grid item xs={4} className={itemClasses}>
-        <LabeledStatWithTooltip
-          value={formatted.apy24hrs}
+          value={formatted.apy}
           label={t('Vault-APYDaily')}
-          tooltip={<Apy24HrTooltip/>}
+          tooltip={<ApyTooltip/>}
           boosted={isBoosted ? formatted.boostedTotalApy : ''}
           isLoading={isLoading}
           className={`tooltip-toggle ${itemInnerClasses}`}
