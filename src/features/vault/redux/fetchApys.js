@@ -16,7 +16,7 @@ export function fetchApys() {
 
     return new Promise((resolve, reject) => {
       const cacheBuster = getApiCacheBuster();
-      const url = `http://api.robo-vault.com/vault?_=${cacheBuster}`
+      const url = `https://api.robo-vault.com/vault?_=${cacheBuster}`
       const doRequest = axios.get(url, {crossDomain: true});
 
       doRequest.then(
