@@ -35,7 +35,6 @@ export function fetchByIndex(index) {
       }
 
       const getTotalStaked = async pool => {
-        console.log('Hello!')
         const tokenPrice = await fetchPrice({ id: pool.tokenOracleId });
         const tokenContract = new web3.eth.Contract(pool.earnContractAbi, pool.earnContractAddress);
         let totalStaked = new BigNumber(await tokenContract.methods.totalSupply().call());

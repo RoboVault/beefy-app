@@ -29,16 +29,16 @@ const styles = theme => ({
   },
   itemTitle: {
     [theme.breakpoints.up('xs')]: {
-      flexBasis: '100%',
-      maxWidth: '100%',
-    },
-    [theme.breakpoints.up('sm')]: {
-      flexBasis: '100%',
-      maxWidth: '100%',
-    },
-    [theme.breakpoints.up('md')]: {
       flexBasis: '50%',
       maxWidth: '50%',
+    },
+    [theme.breakpoints.up('sm')]: {
+      flexBasis: '50%',
+      maxWidth: '50%',
+    },
+    [theme.breakpoints.up('md')]: {
+      flexBasis: '33%',
+      maxWidth: '33%',
     },
     [theme.breakpoints.up('lg')]: {
       flexBasis: '25%',
@@ -55,8 +55,8 @@ const styles = theme => ({
       maxWidth: '50%',
     },
     [theme.breakpoints.up('md')]: {
-      flexBasis: '25%',
-      maxWidth: '25%',
+      flexBasis: '33%',
+      maxWidth: '33%',
     },
     [theme.breakpoints.up('lg')]: {
       flexBasis: '17.5%',
@@ -73,12 +73,12 @@ const styles = theme => ({
       maxWidth: '50%',
     },
     [theme.breakpoints.up('md')]: {
-      flexBasis: '25%',
-      maxWidth: '25%',
+      flexBasis: '33%',
+      maxWidth: '33%',
     },
     [theme.breakpoints.up('lg')]: {
-      flexBasis: '10%',
-      maxWidth: '10%',
+      flexBasis: '13.3%',
+      maxWidth: '13.3%',
     },
   },
   itemInner: {

@@ -81,12 +81,12 @@ const styles = theme => ({
   },
   itemStats: {
     [theme.breakpoints.up('md')]: {
-      flexBasis: '11%',
-      maxWidth: '11%',
+      flexBasis: '14.6%',
+      maxWidth: '14.6%',
     },
     [theme.breakpoints.up('lg')]: {
-      flexBasis: '11.33%',
-      maxWidth: '11.33%',
+      flexBasis: '14.6%',
+      maxWidth: '14.6%',
     },
   },
   itemInner: {
