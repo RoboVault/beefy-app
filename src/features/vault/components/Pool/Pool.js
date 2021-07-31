@@ -34,7 +34,6 @@ const Pool = ({
 
   let balanceSingle = byDecimals(tokens[pool.token].tokenBalance, pool.tokenDecimals);
   let sharesBalance = new BigNumber(tokens[pool.earnedToken].tokenBalance);
-  console.log('sharesBalance', sharesBalance.toNumber())
 
   return (
     <Grid item xs={12} container key={index} className={classes.container} spacing={0}>

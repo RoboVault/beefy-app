@@ -54,7 +54,7 @@ const PoolSummary = ({
       />
     );
   }, [pool, launchpool, t]);
-
+  
   apy.maxApy = pool.maxApy
   apy.apy24hrs = pool.apy24hrs
   const balanceUsd = balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';

@@ -1,6 +1,6 @@
 export const fantomPools = [
   {
-    id: 'fantom-usdc-spirit',
+    id: 'USDC-Cream-Spirit',
     logo: 'tokens/USDC.png',
     name: 'USDC Vault',
     token: 'USDC',
@@ -28,7 +28,7 @@ export const fantomPools = [
     apy24hrs: 0.442,
   },
   {
-    id: 'fantom-usdc-spooky',
+    id: 'USDC-Cream-Spooky',
     logo: 'tokens/USDC.png',
     name: 'USDC Vault',
     token: 'USDC',
@@ -56,7 +56,7 @@ export const fantomPools = [
     apy24hrs: 0.32,
   },
   {
-    id: 'fantom-dai-spooky',
+    id: 'DAI-Cream-Spooky',
     logo: 'tokens/DAI.png',
     name: 'DAI Vault',
     token: 'DAI',
@@ -84,7 +84,7 @@ export const fantomPools = [
     apy24hrs: 0.4,
   },
   {
-    id: 'fantom-wbtc-spirit',
+    id: 'WBTC-Cream-Spirit',
     logo: 'tokens/BTC.png',
     name: 'WBTC Vault',
     token: 'WBTC',
@@ -112,7 +112,7 @@ export const fantomPools = [
     apy24hrs: 0.28,
   },
   {
-    id: 'fantom-wbtc-spooky',
+    id: 'WBTC-Cream-Spooky',
     logo: 'tokens/BTC.png',
     name: 'WBTC Vault',
     token: 'WBTC',
@@ -140,7 +140,7 @@ export const fantomPools = [
     apy24hrs: 0.269,
   },
   {
-    id: 'fantom-eth-spooky',
+    id: 'ETH-Cream-Spooky',
     logo: 'tokens/ETH.png',
     name: 'WETH Vault',
     token: 'WETH',
@@ -168,7 +168,7 @@ export const fantomPools = [
     apy24hrs: 0.243,
   },
   {
-    id: 'fantom-wftm-spooky',
+    id: 'FTM-Cream-Spooky',
     logo: 'tokens/FTM.png',
     name: 'WFTM Vault',
     token: 'WFTM',
