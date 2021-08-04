@@ -100,7 +100,7 @@ export const fantomPools = [
     assets: ['USDT'],
     callFee: 0.05,
     withdrawalFee: '0 - 0.5%',
-    buyTokenUrl: 'https://ftmscan.com/address/0xd80b8E2BE986aca50070B6E83a840c5E8AF20792',
+    buyTokenUrl: 'https://ftmscan.com/address/0xBD0454317d113b48d411715E16a77315b82149A1',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=FUSDT-Scream-Spooky',
   },
   {
