@@ -24,8 +24,6 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x166474b2b4eed48a4e18dc034dbf1deef6e3380c',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=USDC-Cream-Spirit',
-    maxApy: 0.269,
-    apy24hrs: 0.442,
   },
   {
     id: 'USDC-Cream-Spooky',
@@ -52,8 +50,6 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0xdc0d893338e7b00673c46dc2429fc3e725cdadac',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=USDC-Cream-Spooky',
-    maxApy: 0.351,
-    apy24hrs: 0.32,
   },
   {
     id: 'DAI-Cream-Spooky',
@@ -80,8 +76,6 @@ export const fantomPools = [
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x24193311B415044BF5D9b48f8EB3c3A599E0B5Cf',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=DAI-Cream-Spooky',
-    maxApy: 0.4431,
-    apy24hrs: 0.4,
   },
   {
     id: 'FUSDT-Scream-Spooky',
@@ -94,8 +88,8 @@ export const fantomPools = [
     tokenDescriptionUrl: '#',
     earnedToken: 'rvFUSDTCa',
     earnedTokenDecimals: 6,
-    earnedTokenAddress: '0xd80b8E2BE986aca50070B6E83a840c5E8AF20792',
-    earnContractAddress: '0xd80b8E2BE986aca50070B6E83a840c5E8AF20792',
+    earnedTokenAddress: '0xBD0454317d113b48d411715E16a77315b82149A1',
+    earnContractAddress: '0xBD0454317d113b48d411715E16a77315b82149A1',
     tvl: 0,
     oracle: 'tokens',
     oracleId: 'USDT',
@@ -134,8 +128,6 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x207fd5079cf06dc741752b32e26f73e88e836837',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=WBTC-Cream-Spirit',
-    maxApy: 0.2333,
-    apy24hrs: 0.28,
   },
   {
     id: 'WBTC-Cream-Spooky',
@@ -162,8 +154,6 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x03d2ce8813345382896c624d826cd28b631da28c',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=WBTC-Cream-Spooky',
-    maxApy: 0.3992,
-    apy24hrs: 0.269,
   },
   {
     id: 'ETH-Cream-Spooky',
@@ -190,8 +180,6 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x7370910500EDb5c5f9e59c2c2F7aCe11dBd7D1D5',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=ETH-Cream-Spooky',
-    maxApy: 0.3488,
-    apy24hrs: 0.243,
   },
   {
     id: 'FTM-Cream-Spooky',
@@ -218,7 +206,5 @@ export const fantomPools = [
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x12042BD59C4FAD1c7B7eE2de128F0efd14f826DF',
     buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=FTM-Cream-Spooky',
-    maxApy: 0.3854,
-    apy24hrs: 0.445,
   },
 ];
