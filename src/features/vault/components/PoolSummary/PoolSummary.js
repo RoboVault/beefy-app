@@ -24,6 +24,7 @@ const PoolSummary = ({
   fetchBalancesDone,
   fetchApysDone,
   fetchVaultsDataDone,
+  address
 }) => {
   const { t } = useTranslation();
   const classes = useStyles();
@@ -98,7 +99,8 @@ const PoolSummary = ({
             addLiquidityUrl={pool.addLiquidityUrl}
             removeLiquidityUrl={pool.removeLiquidityUrl}
             buyTokenUrl={pool.buyTokenUrl}
-            buyTokenAnalyticsUrl={pool.buyTokenAnalyticsUrl}
+            buyTokenAnalyticsUrl={toTokenAnalyticsUrl(address, pool.id)}
+            holderAnalyticsUrl={sharesBalance > 0 ? toHolderAnalyticsUrl(address, pool.id) : null}
             assets={pool.assets}
           />
         </Grid>
@@ -152,5 +154,15 @@ const PoolSummary = ({
 const formatDecimals = number => {
   return number >= 10 ? number.toFixed(4) : number.isEqualTo(0) ? 0 : number.toFixed(8);
 };
+
+const toHolderAnalyticsUrl = (address, id) => {
+  const url = `http://analytics.robo-vault.com/d/-b1gQ0G7k/holder-balance?orgId=1&var-vault=${id}&var-address=${address.toLowerCase()}`
+  return url
+}
+
+const toTokenAnalyticsUrl = (address, id) => {
+  const url = `http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=${id}`
+  return url
+}
 
 export default PoolSummary;

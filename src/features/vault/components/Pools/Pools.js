@@ -91,6 +91,7 @@ export default function Pools() {
         fetchBalancesDone={fetchBalancesDone}
         fetchApysDone={fetchApysDone}
         fetchVaultsDataDone={fetchVaultsDataDone}
+        address={address}
       />
     </Grid>
   );

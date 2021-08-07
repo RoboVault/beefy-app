@@ -30,6 +30,7 @@ const PoolTitle = ({
   launchpool,
   buyTokenUrl,
   buyTokenAnalyticsUrl,
+  holderAnalyticsUrl,
   addLiquidityUrl,
   removeLiquidityUrl,
   assets,
@@ -95,6 +96,14 @@ const PoolTitle = ({
           {buyTokenAnalyticsUrl ? (
             <a className={classes.url} href={buyTokenAnalyticsUrl} target="_blank" rel="noopener noreferrer">
               <span>{'📈'}</span>
+              {'\u00A0\u00A0'}
+            </a>
+          ) : (
+            ''
+          )}
+          {holderAnalyticsUrl ? (
+            <a className={classes.url} href={holderAnalyticsUrl} target="_blank" rel="noopener noreferrer">
+              <span>{'💰'}</span>
               {'\u00A0\u00A0'}
             </a>
           ) : (

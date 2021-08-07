@@ -21,6 +21,7 @@ const Pool = ({
   fetchBalancesDone,
   fetchApysDone,
   fetchVaultsDataDone,
+  address,
 }) => {
   const classes = useStyles();
 
@@ -53,6 +54,7 @@ const Pool = ({
           fetchBalancesDone={fetchBalancesDone}
           fetchApysDone={fetchApysDone}
           fetchVaultsDataDone={fetchVaultsDataDone}
+          address={address}
         />
         <Divider variant="middle" className={classes.divider} />
         <PoolAccordion
