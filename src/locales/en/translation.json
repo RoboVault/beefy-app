@@ -7,7 +7,7 @@
   "Vault-Balance": "Balance",
   "Vault-APR": "APR",
   "Vault-MaxAPY": "Max APY",
-  "Vault-APYDaily": "3-day APY",
+  "Vault-APYDaily": "7-day APY",
   "Vault-TVL": "TVL",
   "Vault-Reserves": "Vault Reserves",
   "Vault-AutocompoundingNote": " ",

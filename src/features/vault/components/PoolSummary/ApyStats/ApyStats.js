@@ -44,7 +44,7 @@ const ApyTooltip = memo(({ rows }) => {
   return (
     <div>
       <Typography className={classes.label} variant="body3">
-        {'Based on the performance of the previous 72 hours'}
+        {'Based on the performance of the previous 7 days or since launch'}
       </Typography>
     </div>
   );
@@ -142,7 +142,11 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
 
   values.maxApy = apy.maxApy;
   values.apy24hrs = apy.apy24hrs;
-  values.apy = apy.apy;
+  if (apy.apy7d)
+    values.apy = apy.apy7d;
+  else
+    values.apy = apy.apy3d;
+    
 
   if ('vaultApr' in apy && apy.vaultApr) {
     needsApyTooltip = true;
