@@ -231,6 +231,6 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x19Bb5C2FD5cE267CdF47314D5c4F6EF56dc184a9',
-    buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=FTM-Cream-Spooky',
+    buyTokenAnalyticsUrl: 'http://analytics.robo-vault.com/d/DkDnB-Z7z/vaults-dash?orgId=1&var-vault=FTM-Scream-Spooky',
   },
 ];
