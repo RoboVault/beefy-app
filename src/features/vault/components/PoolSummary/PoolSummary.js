@@ -102,6 +102,7 @@ const PoolSummary = ({
             buyTokenAnalyticsUrl={toTokenAnalyticsUrl(address, pool.id)}
             holderAnalyticsUrl={sharesBalance > 0 ? toHolderAnalyticsUrl(address, pool.id) : null}
             assets={pool.assets}
+            lowLiquidity={pool.lowLiquidity}
           />
         </Grid>
         <Grid item xs={6} className={`${classes.item} ${classes.itemBalances}`}>
