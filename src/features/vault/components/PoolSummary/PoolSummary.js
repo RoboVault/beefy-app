@@ -95,6 +95,7 @@ const PoolSummary = ({
             logo={pool.logo}
             poolId={pool.id}
             description={t('Vault-Description', { vault: pool.tokenDescription })}
+            liquidityWarning={t('Liquidity-Warning', { shortToken: pool.shortToken })}
             launchpool={launchpool}
             addLiquidityUrl={pool.addLiquidityUrl}
             removeLiquidityUrl={pool.removeLiquidityUrl}
@@ -102,6 +103,7 @@ const PoolSummary = ({
             buyTokenAnalyticsUrl={toTokenAnalyticsUrl(address, pool.id)}
             holderAnalyticsUrl={sharesBalance > 0 ? toHolderAnalyticsUrl(address, pool.id) : null}
             assets={pool.assets}
+            lowLiquidity={pool.lowLiquidity}
           />
         </Grid>
         <Grid item xs={6} className={`${classes.item} ${classes.itemBalances}`}>

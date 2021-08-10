@@ -7,8 +7,21 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 import styles from './styles';
+import { Fade, Tooltip } from '@material-ui/core';
 
 const useStyles = makeStyles(styles);
+
+const lowLiquidityTooltip = memo(({ rows }) => {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Typography className={classes.label} variant="body3">
+        {'Based on the performance of the previous 7 days or since launch'}
+      </Typography>
+    </div>
+  );
+});
 
 const singleAssetExtensions = ['svg', 'webp', 'png'];
 const singleAsset = symbol => {
@@ -27,6 +40,7 @@ const PoolTitle = ({
   logo,
   poolId,
   description,
+  liquidityWarning,
   launchpool,
   buyTokenUrl,
   buyTokenAnalyticsUrl,
@@ -34,6 +48,7 @@ const PoolTitle = ({
   addLiquidityUrl,
   removeLiquidityUrl,
   assets,
+  lowLiquidity,
 }) => {
   const classes = useStyles();
   const { t } = useTranslation();
@@ -79,6 +94,21 @@ const PoolTitle = ({
             </a>
           ) : (
             name
+          )}
+          {lowLiquidity ? (
+            <Tooltip
+              arrow
+              TransitionComponent={Fade}
+              title={liquidityWarning}
+              placement="bottom"
+              enterTouchDelay={0}
+              leaveTouchDelay={3000}
+              classes={{ tooltip: classes.tooltip }}
+            >
+            <span className={classes.subtitle} variant="body2">{' ⚠️ (Low Liquidity)'}</span>
+            </Tooltip>
+          ) : (
+            ''            
           )}
         </Typography>
         <Typography className={classes.subtitle} variant="body2">
