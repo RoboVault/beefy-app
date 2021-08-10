@@ -40,6 +40,7 @@ const PoolTitle = ({
   logo,
   poolId,
   description,
+  liquidityWarning,
   launchpool,
   buyTokenUrl,
   buyTokenAnalyticsUrl,
@@ -47,7 +48,7 @@ const PoolTitle = ({
   addLiquidityUrl,
   removeLiquidityUrl,
   assets,
-  lowLiquidity
+  lowLiquidity,
 }) => {
   const classes = useStyles();
   const { t } = useTranslation();
@@ -98,7 +99,7 @@ const PoolTitle = ({
             <Tooltip
               arrow
               TransitionComponent={Fade}
-              title={t('Liquidity-Warning')}
+              title={liquidityWarning}
               placement="bottom"
               enterTouchDelay={0}
               leaveTouchDelay={3000}

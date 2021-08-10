@@ -95,6 +95,7 @@ const PoolSummary = ({
             logo={pool.logo}
             poolId={pool.id}
             description={t('Vault-Description', { vault: pool.tokenDescription })}
+            liquidityWarning={t('Liquidity-Warning', { shortToken: pool.shortToken })}
             launchpool={launchpool}
             addLiquidityUrl={pool.addLiquidityUrl}
             removeLiquidityUrl={pool.removeLiquidityUrl}
