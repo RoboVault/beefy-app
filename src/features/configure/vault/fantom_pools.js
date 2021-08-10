@@ -243,7 +243,7 @@ export const fantomPools = [
     lowLiquidity: false,
   },
   {
-    id: 'FTM-Scream-Spooky',
+    id: 'FTM-Scream-Spooky-USDC',
     logo: 'tokens/FTM.png',
     name: 'WFTM Vault',
     token: 'WFTM',
