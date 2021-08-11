@@ -144,8 +144,12 @@ const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInne
   values.apy24hrs = apy.apy24hrs;
   if (apy.apy7d)
     values.apy = apy.apy7d;
-  else
+  else if (apy.apy3d)
     values.apy = apy.apy3d;
+  else if (apy.apy2d)
+    values.apy = apy.apy2d;
+  else
+    values.apy = apy.apy1d;
     
 
   if ('vaultApr' in apy && apy.vaultApr) {
