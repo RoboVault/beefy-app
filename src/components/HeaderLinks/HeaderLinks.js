@@ -113,7 +113,7 @@ const HeaderLinks = ({
           </IconButton>
         </ListItem>
       </Hidden>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           navDropdown
           hoverColor="dark"
@@ -124,9 +124,8 @@ const HeaderLinks = ({
           }}
           onClick={handleClick}
           dropdownList={[
-            //'Deutsch',
+            'Deutsch',
             'English',
-            /*
             'Ελληνικά',
             'Español',
             'Français',
@@ -142,7 +141,6 @@ const HeaderLinks = ({
             'Türkçe',
             'Українська',
             '中文',
-            */
             // TODO: more translations
             { divider: true },
             <a
@@ -155,7 +153,7 @@ const HeaderLinks = ({
             </a>,
           ]}
         />
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Button
           disableElevation
