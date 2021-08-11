@@ -191,7 +191,7 @@ export const fantomPools = [
   {
     id: 'FTM-Cream-Spooky',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault',
+    name: 'WFTM Vault #1',
     token: 'WFTM',
     shortToken: 'DAI',
     tokenDescription: 'Cream, Spooky Swap, DAI',
@@ -218,7 +218,7 @@ export const fantomPools = [
   {
     id: 'FTM-Scream-Spooky',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault',
+    name: 'WFTM Vault #2',
     token: 'WFTM',
     shortToken: 'ETH',
     tokenDescription: 'Scream, Spooky Swap, ETH',
@@ -245,7 +245,7 @@ export const fantomPools = [
   {
     id: 'FTM-Scream-Spooky-USDC',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault',
+    name: 'WFTM Vault #3',
     token: 'WFTM',
     shortToken: 'USDC',
     tokenDescription: 'Scream, Spooky Swap, USDC',

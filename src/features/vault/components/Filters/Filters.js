@@ -32,7 +32,7 @@ const Filters = ({
   const { t } = useTranslation();
   const classes = useStyles();
 
-  const handlePlatformChange = event => setPlatform(event.target.value);
+  const handlePlatformChange = (_event, option) => setPlatform(option.value);
   const handleVaultTypeChange = event => setVaultType(event.target.value);
   const handleAssetChange = (_event, option) => setAsset(option.value);
   const handleOrderChange = event => setOrder(event.target.value);
@@ -45,6 +45,16 @@ const Filters = ({
     ...assets.map(asset => ({
       value: asset,
       label: asset,
+    })),
+  ];
+  const options2 = [
+    {
+      value: 'All',
+      label: t('Filters-All'),
+    },
+    ...platforms.map(platform => ({
+      value: platform,
+      label: platform,
     })),
   ];
 
@@ -77,8 +87,6 @@ const Filters = ({
           />
         </FormControl>
       </Grid>
-      
- 
 
       <Grid item xs={6} sm={4} md={3}>
         <FormControl>
@@ -97,33 +105,28 @@ const Filters = ({
         </FormControl>
       </Grid>
 
-
-
       <Grid item xs={6} sm={4} md={3}>
         <FormControl className={classes.selectorContainer}>
-          <InputLabel id="select-platform-label" className={classes.selectorLabel}>
-            {t('Filters-Platform')}
-          </InputLabel>
-          <Select
-            value={platform}
+          <Autocomplete
+            value={options2.find(option => option.value === platform)}
             onChange={handlePlatformChange}
             className={classes.selector}
-            id="select-platform"
-            labelId="select-platform-label"
-          >
-            <MenuItem key={'All'} value={'All'}>
-              {t('Filters-All')}
-            </MenuItem>
-            {platforms.map(platform => (
-              <MenuItem key={platform} value={platform}>
-                {platform}
-              </MenuItem>
-            ))}
-          </Select>
+            id="select-asset"
+            options={options2}
+            getOptionLabel={options2 => options2.label}
+            renderInput={params => (
+              <TextField
+                {...params}
+                label={t('Filters-Platform')}
+                InputLabelProps={{
+                  className: classes.selectorLabel,
+                }}
+              />
+            )}
+            disableClearable
+          />
         </FormControl>
       </Grid>
-
-
 
       <Grid item xs={6} sm={4} md={3}>
         <FormControl className={classes.selectorContainer}>
@@ -147,7 +150,6 @@ const Filters = ({
           />
         </FormControl>
       </Grid>
-
 
     </Grid>
   );
