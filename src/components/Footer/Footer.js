@@ -43,6 +43,16 @@ const Footer = () => {
           <i className={`fab fa-github ${classes.linkIcon}`}></i>
           <span>{t('source')}</span>
         </a>
+
+        <a
+          href="http://analytics.robo-vault.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.link}
+        >
+          <i className={`fa fa-bar-chart ${classes.linkIcon}`}></i>
+          <span>{'analytics'}</span>
+        </a>
       </div>
 
       <div className={classes.column}>
