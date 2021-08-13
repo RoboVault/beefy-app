@@ -270,7 +270,7 @@ export const fantomPools = [
     lowLiquidity: false,
   },
   {
-    id: 'LINK-Scream-Spooky',
+    id: 'LINK-Cream-Spooky',
     logo: 'tokens/LINK.png',
     name: 'LINK Vault',
     token: 'LINK',
