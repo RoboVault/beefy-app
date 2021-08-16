@@ -73,6 +73,7 @@
   "Vault-Banner-CakeV2-FairerValue": "{{percent}}% less fees",
   "Vaults-Back": "Back to vaults",
   "Liquidity-Warning": "The lending platform of this vault has low {{shortToken}} liquidity. New deposits will remain in reserves until more liquidity is available.",
+  "Collateral-Warning": "The Collateral Cap has been reached for {{token}} on this lending platform. See Discord for updates on Collateral Caps.",
   "Hide-Zero-Balances": "Hide Zero Balances",
   "Hide-Zero-Vault-Balances": "Deposited Vaults",
   "Retired-Vaults": "Retired Vaults",

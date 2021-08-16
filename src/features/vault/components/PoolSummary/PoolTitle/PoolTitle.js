@@ -41,6 +41,7 @@ const PoolTitle = ({
   poolId,
   description,
   liquidityWarning,
+  collateralCapWarning,
   launchpool,
   buyTokenUrl,
   buyTokenAnalyticsUrl,
@@ -49,6 +50,7 @@ const PoolTitle = ({
   removeLiquidityUrl,
   assets,
   lowLiquidity,
+  collateralCap,
 }) => {
   const classes = useStyles();
   const { t } = useTranslation();
@@ -106,6 +108,21 @@ const PoolTitle = ({
               classes={{ tooltip: classes.tooltip }}
             >
             <span className={classes.subtitle} variant="body2">{' ⚠️ (Low Liquidity)'}</span>
+            </Tooltip>
+          ) : (
+            ''            
+          )}
+          {collateralCap ? (
+            <Tooltip
+              arrow
+              TransitionComponent={Fade}
+              title={collateralCapWarning}
+              placement="bottom"
+              enterTouchDelay={0}
+              leaveTouchDelay={3000}
+              classes={{ tooltip: classes.tooltip }}
+            >
+            <span className={classes.subtitle} variant="body2">{' ⚠️ (Collateral Capped)'}</span>
             </Tooltip>
           ) : (
             ''            
