@@ -25,7 +25,7 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x166474b2b4eed48a4e18dc034dbf1deef6e3380c',
     lowLiquidity: false,
-    collateralCap: true,
+    collateralCap: false,
   },
   {
     id: 'USDC-Cream-Spooky',
@@ -53,7 +53,7 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0xdc0d893338e7b00673c46dc2429fc3e725cdadac',
     lowLiquidity: false,
-    collateralCap: true,
+    collateralCap: false,
   },
   {
     id: 'DAI-Cream-Spooky',
@@ -81,7 +81,7 @@ export const fantomPools = [
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x24193311B415044BF5D9b48f8EB3c3A599E0B5Cf',
     lowLiquidity: false,
-    collateralCap: true,
+    collateralCap: false,
   },
   {
     id: 'FUSDT-Scream-Spooky',
@@ -109,7 +109,7 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0xBD0454317d113b48d411715E16a77315b82149A1',
     lowLiquidity: false,
-    collateralCap: true,
+    collateralCap: false,
   },
   {
     id: 'WBTC-Cream-Spirit',
@@ -137,7 +137,7 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x207fd5079cf06dc741752b32e26f73e88e836837',
     lowLiquidity: false,
-    collateralCap: true,
+    collateralCap: false,
   },
   {
     id: 'WBTC-Cream-Spooky',
@@ -165,7 +165,7 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x03d2ce8813345382896c624d826cd28b631da28c',
     lowLiquidity: false,
-    collateralCap: true,
+    collateralCap: false,
   },
   {
     id: 'ETH-Cream-Spooky',
@@ -193,7 +193,7 @@ export const fantomPools = [
     withdrawalFee: '0 - 0.5%',
     buyTokenUrl: 'https://ftmscan.com/address/0x7370910500EDb5c5f9e59c2c2F7aCe11dBd7D1D5',
     lowLiquidity: false,
-    collateralCap: true,
+    collateralCap: false,
   },
   {
     id: 'FTM-Cream-Spooky',
