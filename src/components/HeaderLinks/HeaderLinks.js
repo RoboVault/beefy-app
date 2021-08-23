@@ -113,7 +113,7 @@ const HeaderLinks = ({
           </IconButton>
         </ListItem>
       </Hidden>
-      {/* <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           navDropdown
           hoverColor="dark"
@@ -124,36 +124,27 @@ const HeaderLinks = ({
           }}
           onClick={handleClick}
           dropdownList={[
-            'Deutsch',
+            // 'Deutsch',
             'English',
-            'Ελληνικά',
-            'Español',
-            'Français',
-            'हिन्दी',
-            'Bahasa Indonesia',
-            'Italiano',
-            '한글',
-            'Nederlands',
-            'Português do Brasil',
-            'Português de Portugal',
-            'Pусский',
-            'Svenska',
-            'Türkçe',
-            'Українська',
-            '中文',
+            // 'Ελληνικά',
+            // 'Español',
+            // 'Français',
+            // 'हिन्दी',
+            // 'Bahasa Indonesia',
+            // 'Italiano',
+            // '한글',
+            // 'Nederlands',
+            // 'Português do Brasil',
+            // 'Português de Portugal',
+            // 'Pусский',
+            // 'Svenska',
+            // 'Türkçe',
+            // 'Українська',
+            // '中文',
             // TODO: more translations
-            { divider: true },
-            <a
-              href="https://github.com/robovault/robo-vault-app/tree/master/src/locales"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classes.cta}
-            >
-              Help to translate
-            </a>,
           ]}
         />
-      </ListItem> */}
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           disableElevation

@@ -23,25 +23,25 @@ import translationUK from './locales/uk/translation.json';
 import translationZH from './locales/zh/translation.json';
 
 const resources = {
-  ar: { translation: translationAR },
-  cn: { translation: translationCN },
-  de: { translation: translationDE },
-  el: { translation: translationEL },
+  // ar: { translation: translationAR },
+  // cn: { translation: translationCN },
+  // de: { translation: translationDE },
+  // el: { translation: translationEL },
   en: { translation: translationEN },
-  es: { translation: translationES },
-  fr: { translation: translationFR },
-  hi: { translation: translationHI },
-  id: { translation: translationID },
-  it: { translation: translationIT },
-  ko: { translation: translationKO },
-  nl: { translation: translationNL },
-  'pt-BR': { translation: translationPT_br },
-  'pt-PT': { translation: translationPT_pt },
-  ru: { translation: translationRU },
-  se: { translation: translationSE },
-  tr: { translation: translationTR },
-  uk: { translation: translationUK },
-  zh: { translation: translationZH },
+  // es: { translation: translationES },
+  // fr: { translation: translationFR },
+  // hi: { translation: translationHI },
+  // id: { translation: translationID },
+  // it: { translation: translationIT },
+  // ko: { translation: translationKO },
+  // nl: { translation: translationNL },
+  // 'pt-BR': { translation: translationPT_br },
+  // 'pt-PT': { translation: translationPT_pt },
+  // ru: { translation: translationRU },
+  // se: { translation: translationSE },
+  // tr: { translation: translationTR },
+  // uk: { translation: translationUK },
+  // zh: { translation: translationZH },
   // TODO: more translations
 };
 
@@ -62,5 +62,6 @@ i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
   });
+  
 
 export default i18n;
