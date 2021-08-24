@@ -32,7 +32,7 @@ const resources = {
   // fr: { translation: translationFR },
   // hi: { translation: translationHI },
   // id: { translation: translationID },
-  // it: { translation: translationIT },
+  it: { translation: translationIT },
   // ko: { translation: translationKO },
   // nl: { translation: translationNL },
   // 'pt-BR': { translation: translationPT_br },

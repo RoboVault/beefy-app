@@ -60,15 +60,15 @@ const HeaderLinks = ({
 
   const handleClick = event => {
     switch (event) {
+      case 'English':
+        return i18n.changeLanguage('en').then(() => setLanguage(event));
+      case 'Italiano':
+        return i18n.changeLanguage('it').then(() => setLanguage(event));
       /*
       case 'Deutsch':
         return i18n.changeLanguage('de').then(() => setLanguage(event));
       case 'Ελληνικά':
         return i18n.changeLanguage('el').then(() => setLanguage(event));
-      */
-      case 'English':
-        return i18n.changeLanguage('en').then(() => setLanguage(event));
-      /*
       case 'Español':
         return i18n.changeLanguage('es').then(() => setLanguage(event));
       case 'Français':
@@ -77,8 +77,6 @@ const HeaderLinks = ({
         return i18n.changeLanguage('hi').then(() => setLanguage(event));
       case 'Bahasa Indonesia':
         return i18n.changeLanguage('id').then(() => setLanguage(event));
-      case 'Italiano':
-        return i18n.changeLanguage('it').then(() => setLanguage(event));
       case '한글':
         return i18n.changeLanguage('ko').then(() => setLanguage(event));
       case 'Nederlands':
@@ -124,14 +122,14 @@ const HeaderLinks = ({
           }}
           onClick={handleClick}
           dropdownList={[
-            // 'Deutsch',
             'English',
+            'Italiano',
+            // 'Deutsch',
             // 'Ελληνικά',
             // 'Español',
             // 'Français',
             // 'हिन्दी',
             // 'Bahasa Indonesia',
-            // 'Italiano',
             // '한글',
             // 'Nederlands',
             // 'Português do Brasil',
