@@ -11,6 +11,7 @@ import PoolPaused from './PoolPaused/PoolPaused';
 import PoolTitle from './PoolTitle/PoolTitle';
 import LabeledStat from './LabeledStat/LabeledStat';
 import ApyStats from './ApyStats/ApyStats';
+import LabeledStatWithTooltip from './LabeledStat/LabeledStatWithTooltip';
 
 const useStyles = makeStyles(styles);
 
@@ -127,12 +128,13 @@ const PoolSummary = ({
           />
         </Grid>
         <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
-          <LabeledStat
+          <LabeledStatWithTooltip
             value={formatReserves(pool.balanceReserves, 1)}
             subvalue={balanceReservesUsd}
             label={t('Vault-Reserves')}
             isLoading={!fetchVaultsDataDone}
             className={classes.itemInner}
+            tooltip={t('Vault-ReservesTooltip')}
           />
         </Grid>
           <ApyStats
@@ -141,6 +143,7 @@ const PoolSummary = ({
             isLoading={!fetchApysDone}
             itemClasses={`${classes.item} ${classes.itemStats}`}
             itemInnerClasses={classes.itemInner}
+            status={pool.status}
           />
         <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStat

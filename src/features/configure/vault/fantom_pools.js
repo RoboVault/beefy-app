@@ -130,7 +130,7 @@ export const fantomPools = [
     oracleId: 'BTC',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'Cream + Spirit Swap',
     assets: ['BTC'],
     callFee: 0.05,
@@ -220,7 +220,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x12042BD59C4FAD1c7B7eE2de128F0efd14f826DF',
-    lowLiquidity: true,
+    lowLiquidity: false,
     collateralCap: false,
   },
   {
