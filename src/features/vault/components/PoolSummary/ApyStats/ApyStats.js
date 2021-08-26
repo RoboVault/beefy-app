@@ -35,7 +35,7 @@ const ApyStats = ({ apy, isLoading = false, itemClasses, itemInnerClasses, statu
     <>
       <Grid item xs={4} className={itemClasses}>
         <LabeledStatWithTooltip
-          value={status == 'eol' ? '0%' : formatted.apy}
+          value={status == 'eol' || values.apy < 0 ? '0%' : formatted.apy}
           label={t('Vault-APY')}
           tooltip={t('Vault-APY-Tooltip')}
           isLoading={isLoading}
