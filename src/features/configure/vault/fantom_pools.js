@@ -220,7 +220,7 @@ export const fantomPools = [
     callFee: 0.05,
     withdrawalFee: '0.00%',
     buyTokenUrl: 'https://ftmscan.com/address/0x12042BD59C4FAD1c7B7eE2de128F0efd14f826DF',
-    lowLiquidity: false,
+    lowLiquidity: true,
     collateralCap: false,
   },
   {
