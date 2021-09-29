@@ -111,4 +111,4 @@ export const fantomPools = [
     lowLiquidity: false,
     collateralCap: false,
   },
-];
+]; 
