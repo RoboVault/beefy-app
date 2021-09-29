@@ -40,7 +40,7 @@ export function fetchByIndex(index) {
         let totalStaked = new BigNumber(await tokenContract.methods.totalSupply().call());
         if (pool.isMooStaked) {
           const mooToken = new web3.eth.Contract(MooToken, pool.tokenAddress);
-          const pricePerShare = new BigNumber(await mooToken.methods.getPricePerFullShare().call());
+          const pricePerShare = new BigNumber(await mooToken.methods.getPricePerShare().call());
           totalStaked = totalStaked
             .times(pricePerShare)
             .dividedBy(new BigNumber(10).exponentiatedBy(pool.tokenDecimals));
