@@ -58,7 +58,7 @@ export const fantomPools = [
   {
     id: 'WFTM-Scream-Spirit (USDC) V2',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault',
+    name: 'WFTM Vault V2',
     token: 'WFTM',
     shortToken: 'USDC',
     tokenDescription: 'Scream, SpiritSwap, USDC',
@@ -86,7 +86,7 @@ export const fantomPools = [
   {
     id: 'WFTM-Scream-Spooky (USDC) V2',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault',
+    name: 'WFTM Vault V2',
     token: 'WFTM',
     shortToken: 'USDC',
     tokenDescription: 'Scream, SpookySwap, USDC',
@@ -111,4 +111,4 @@ export const fantomPools = [
     lowLiquidity: false,
     collateralCap: false,
   },
-]; 
+];
