@@ -34,7 +34,7 @@ export const fantomPools = [
     token: 'USDC',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpookySwap, WFTM',
-    tokenAddress: '0xA25e93Bf8eFFF900aAEC66B9ea5BD160E54a6Bf4',
+    tokenAddress: '0x04068da6c83afcfa0e13ba15a6696662335d5b75',
     tokenDecimals: 6,
     tokenDescriptionUrl: '#',
     earnedToken: 'rv2USDCb',
