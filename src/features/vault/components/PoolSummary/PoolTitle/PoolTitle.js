@@ -90,13 +90,7 @@ const PoolTitle = ({
       {avatar}
       <div className={classes.texts}>
         <Typography className={classes.title} variant="body2" gutterBottom>
-          {poolId ? (
-            <a href={`/vault/${poolId}`} className={classes.url}>
-              {name}
-            </a>
-          ) : (
-            name
-          )}
+          {name}
           {lowLiquidity ? (
             <Tooltip
               arrow
