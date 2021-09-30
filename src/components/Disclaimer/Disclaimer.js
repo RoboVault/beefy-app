@@ -18,7 +18,7 @@ const Disclaimer = () => {
         {
           <Typography inline className={classes.annoucement}>
               <span>Our V2 Vaults are now live at <a href="https://v2.robo-vault.com/">v2.robo-vault.com</a></span><br/>
-              <span>For any questions on migration check our <a href="https://docs.robo-vault.com/robovault-v2/robovault-v2-fa">V2 FAQ</a></span>
+              <span>For any questions on migration check our <a href="https://docs.robo-vault.com/robovault-v2/robovault-v2-faq">V2 FAQ</a></span>
           </Typography>
         }
       </Grid>
