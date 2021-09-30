@@ -15,6 +15,7 @@ const createTheme = isNightMode =>
         retired: isNightMode ? '#d32f2f' : '#e57373',
         hover: isNightMode ? '#2B2A3D' : '#EFE6DC',
         border: isNightMode ? '#2B2A3D' : '#b8c2e6',
+        announce: isNightMode ? '#2B2A3D' : '#2B2A3D',
       },
       primary: {
         main: isNightMode ? '#fff' : '#000',
@@ -25,6 +26,7 @@ const createTheme = isNightMode =>
       text: {
         primary: isNightMode ? '#fff' : '#2042b3',
         secondary: isNightMode ? '#B0B0DD' : '#445db3',
+        announce: isNightMode ? '#fff' : '#fff',
       },
     },
     overrides: {
