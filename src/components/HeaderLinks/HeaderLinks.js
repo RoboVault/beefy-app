@@ -64,9 +64,13 @@ const HeaderLinks = ({
         return i18n.changeLanguage('en').then(() => setLanguage(event));
       case 'Italiano':
         return i18n.changeLanguage('it').then(() => setLanguage(event));
-      /*
       case 'Deutsch':
         return i18n.changeLanguage('de').then(() => setLanguage(event));
+      case 'Português do Brasil':
+        return i18n.changeLanguage('pt-BR').then(() => setLanguage(event));
+      case 'Vietnamese':
+        return i18n.changeLanguage('vn').then(() => setLanguage(event));
+/*
       case 'Ελληνικά':
         return i18n.changeLanguage('el').then(() => setLanguage(event));
       case 'Español':
@@ -81,8 +85,6 @@ const HeaderLinks = ({
         return i18n.changeLanguage('ko').then(() => setLanguage(event));
       case 'Nederlands':
         return i18n.changeLanguage('nl').then(() => setLanguage(event));
-      case 'Português do Brasil':
-        return i18n.changeLanguage('pt-BR').then(() => setLanguage(event));
       case 'Português de Portugal':
         return i18n.changeLanguage('pt-PT').then(() => setLanguage(event));
       case 'Pусский':
@@ -124,7 +126,7 @@ const HeaderLinks = ({
           dropdownList={[
             'English',
             'Italiano',
-            // 'Deutsch',
+            'Deutsch',
             // 'Ελληνικά',
             // 'Español',
             // 'Français',
@@ -132,13 +134,14 @@ const HeaderLinks = ({
             // 'Bahasa Indonesia',
             // '한글',
             // 'Nederlands',
-            // 'Português do Brasil',
+            'Português do Brasil',
             // 'Português de Portugal',
             // 'Pусский',
             // 'Svenska',
             // 'Türkçe',
             // 'Українська',
             // '中文',
+            'Vietnamese',
             // TODO: more translations
           ]}
         />

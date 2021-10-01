@@ -21,11 +21,12 @@ import translationSE from './locales/se/translation.json';
 import translationTR from './locales/tr/translation.json';
 import translationUK from './locales/uk/translation.json';
 import translationZH from './locales/zh/translation.json';
+import translationVN from './locales/vn/translation.json';
 
 const resources = {
   // ar: { translation: translationAR },
   // cn: { translation: translationCN },
-  // de: { translation: translationDE },
+  de: { translation: translationDE },
   // el: { translation: translationEL },
   en: { translation: translationEN },
   // es: { translation: translationES },
@@ -35,13 +36,14 @@ const resources = {
   it: { translation: translationIT },
   // ko: { translation: translationKO },
   // nl: { translation: translationNL },
-  // 'pt-BR': { translation: translationPT_br },
+  'pt-BR': { translation: translationPT_br },
   // 'pt-PT': { translation: translationPT_pt },
   // ru: { translation: translationRU },
   // se: { translation: translationSE },
   // tr: { translation: translationTR },
   // uk: { translation: translationUK },
   // zh: { translation: translationZH },
+  vn: { translation: translationVN },
   // TODO: more translations
 };
 
