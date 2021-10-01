@@ -1,6 +1,6 @@
 export const fantomPools = [
   {
-    id: 'USDC-Scream-Spirit (USDC) V2',
+    id: 'USDC-Scream-Spirit (WFTM) V2',
     logo: 'tokens/USDC.png',
     name: 'USDC Vault V2',
     token: 'USDC',
@@ -28,7 +28,7 @@ export const fantomPools = [
     collateralCap: false,
   },
   {
-    id: 'USDC-Scream-Spooky (USDC) V2',
+    id: 'USDC-Scream-Spooky (WFTM) V2',
     logo: 'tokens/USDC.png',
     name: 'USDC Vault V2',
     token: 'USDC',
