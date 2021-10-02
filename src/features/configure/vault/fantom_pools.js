@@ -130,7 +130,7 @@ export const fantomPools = [
     oracleId: 'USDT',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'Scream + Spooky Swap',
     assets: ['USDT'],
     callFee: 0.05,
