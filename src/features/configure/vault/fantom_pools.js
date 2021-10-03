@@ -2,7 +2,7 @@ export const fantomPools = [
   {
     id: 'USDC-Scream-Spirit (WFTM) V2',
     logo: 'tokens/USDC.png',
-    name: 'USDC Vault V2',
+    name: 'USDC Vault V2 (A)',
     token: 'USDC',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpiritSwap, WFTM',
@@ -30,7 +30,7 @@ export const fantomPools = [
   {
     id: 'USDC-Scream-Spooky (WFTM) V2',
     logo: 'tokens/USDC.png',
-    name: 'USDC Vault V2',
+    name: 'USDC Vault V2 (B)',
     token: 'USDC',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpookySwap, WFTM',
@@ -58,7 +58,7 @@ export const fantomPools = [
   {
     id: 'USDC-Scream-Lqdr-Spirit (WFTM) V2',
     logo: 'tokens/USDC.png',
-    name: 'USDC Vault V2',
+    name: 'USDC Vault V2 (C)',
     token: 'USDC',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, Lqdr + SpiritSwap, WFTM',
@@ -86,7 +86,7 @@ export const fantomPools = [
   {
     id: 'DAI-Scream-Spooky (WFTM) V2',
     logo: 'tokens/DAI.png',
-    name: 'DAI Vault V2',
+    name: 'DAI Vault V2 (A)',
     token: 'DAI',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpookySwap, WFTM',
@@ -114,7 +114,7 @@ export const fantomPools = [
   {
     id: 'FUSDT-Scream-Spooky (WFTM) V2',
     logo: 'tokens/USDT.png',
-    name: 'FUSDT Vault V2',
+    name: 'FUSDT Vault V2 (A)',
     token: 'USDT',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpookySwap, WFTM',
@@ -142,7 +142,7 @@ export const fantomPools = [
   {
     id: 'WFTM-Scream-Spirit (USDC) V2',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault V2',
+    name: 'WFTM Vault V2 (A)',
     token: 'WFTM',
     shortToken: 'USDC',
     tokenDescription: 'Scream, SpiritSwap, USDC',
@@ -170,7 +170,7 @@ export const fantomPools = [
   {
     id: 'WFTM-Scream-Spooky (USDC) V2',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault V2',
+    name: 'WFTM Vault V2 (B)',
     token: 'WFTM',
     shortToken: 'USDC',
     tokenDescription: 'Scream, SpookySwap, USDC',
@@ -198,7 +198,7 @@ export const fantomPools = [
   {
     id: 'WFTM-Scream-Lqdr-Spirit (USDC) V2',
     logo: 'tokens/FTM.png',
-    name: 'WFTM Vault V2',
+    name: 'WFTM Vault V2 (C)',
     token: 'WFTM',
     shortToken: 'USDC',
     tokenDescription: 'Scream, Lqdr + SpiritSwap, USDC',
@@ -226,7 +226,7 @@ export const fantomPools = [
   {
     id: 'WETH-Scream-Spooky (WFTM) V2',
     logo: 'tokens/ETH.png',
-    name: 'WETH Vault V2',
+    name: 'WETH Vault V2 (B)',
     token: 'WETH',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpookySwap, WFTM',
@@ -254,7 +254,7 @@ export const fantomPools = [
   {
     id: 'WBTC-Scream-Spooky (WFTM) V2',
     logo: 'tokens/BTC.png',
-    name: 'WBTC Vault V2',
+    name: 'WBTC Vault V2 (B)',
     token: 'WBTC',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpookySwap, WFTM',
@@ -282,7 +282,7 @@ export const fantomPools = [
   {
     id: 'LINK-Scream-Spooky (WFTM) V2',
     logo: 'tokens/LINK.png',
-    name: 'LINK Vault V2',
+    name: 'LINK Vault V2 (A)',
     token: 'LINK',
     shortToken: 'WFTM',
     tokenDescription: 'Scream, SpookySwap, WFTM',
