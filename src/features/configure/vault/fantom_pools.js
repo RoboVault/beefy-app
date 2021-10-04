@@ -110,7 +110,7 @@ export const fantomPools = [
     buyTokenUrl: 'https://ftmscan.com/address/0x24193311B415044BF5D9b48f8EB3c3A599E0B5Cf',
     lowLiquidity: false,
     collateralCap: false,
-  }, 
+  },
   {
     id: 'FUSDT-Scream-Spooky',
     logo: 'tokens/USDT.png',
