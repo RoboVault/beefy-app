@@ -8,7 +8,7 @@ import {
   VAULT_FETCH_VAULTS_DATA_FAILURE,
 } from './constants';
 import { fetchPrice, whenPricesLoaded } from '../../web3';
-import { erc20ABI, vaultABI } from '../../configure';
+import { vaultABI } from '../../configure';
 import { byDecimals } from 'features/helpers/bignumber';
 import { getNetworkMulticall } from 'features/helpers/getNetworkData';
 import Web3 from 'web3';
@@ -30,8 +30,8 @@ export function fetchVaultsData({ web3, pools }) {
       const vaultCalls = pools.map(pool => {
         const vault = new web3.eth.Contract(vaultABI, pool.earnedTokenAddress);
         return {
-          pricePerFullShare: vault.methods.getPricePerFullShare(),
-          tvl: vault.methods.calcPoolValueInToken(),
+          pricePerFullShare: vault.methods.getPricePerShare(),
+          tvl: vault.methods.estimatedTotalAssets(),
           balanceReserves: vault.methods.balanceReserves(),
         };
       });
@@ -42,7 +42,7 @@ export function fetchVaultsData({ web3, pools }) {
       ])
         .then(data => {
           const newPools = pools.map((pool, i) => {
-            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, 6).toNumber();
+            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, 18).toNumber();
             
             return {
               pricePerFullShare: new BigNumber(pricePerFullShare).toNumber() || 1,

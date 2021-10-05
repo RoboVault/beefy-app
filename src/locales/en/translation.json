@@ -20,7 +20,7 @@
   "Vault-ApprovalError": "Approval error: {{error}}",
   "Vault-DepositButton": "Deposit",
   "Vault-DepositButtonAll": "Deposit All",
-  "Vault-DepositTokensNote": "Withdrawal fee only applies if withdraw cannot be completed from Vault Reserves. Otherwise 0.5% withdrawal fee applies",
+  "Vault-DepositTokensNote": "Withdrawal fee of 0.5% applies if withdraw cannot be completed from Vault Reserves",
   "Vault-DepositAndWithdrawFee": "Deposit fee: {{depositFee}}, Withdrawal fee: {{withdrawalFee}} * ",
   "Vault-Holdings": "Holdings",
   "Vault-DepositSuccess": "Deposit success",
