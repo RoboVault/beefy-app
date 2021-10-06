@@ -25,7 +25,7 @@ const Disclaimer = () => {
       <Grid container item className={classes.root} justify="center">
         {
           <Typography className={classes.disclaimer}>{t('Disclaimer')} 
-              <a href="https://docs.robo-vault.com/robovault/risks" rel="noreferrer">
+              <a href="https://docs.robo-vault.com/security/risks" rel="noreferrer">
                 <i className={`fas fa-book ${classes.linkIcon}`}></i>
               </a>
           </Typography>
