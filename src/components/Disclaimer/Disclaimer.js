@@ -17,7 +17,7 @@ const Disclaimer = () => {
       <Grid container item className={classes.root} justify="center">
         {
           <Typography inline className={classes.annoucement}>
-              <span>Our V1 Vaults are available at <a href="https://robo-vault.com/">robo-vault.com</a></span><br/>
+              <span>Our V1 Vaults are available at <a href="https://v1.robo-vault.com/">v1.robo-vault.com</a></span><br/>
               <span>For any questions on migration, please see <a href="https://docs.robo-vault.com/robovault-v2/robovault-v2-faq">V2 FAQ</a></span>
           </Typography>
         }
@@ -25,7 +25,7 @@ const Disclaimer = () => {
       <Grid container item className={classes.root} justify="center">
         {
           <Typography className={classes.disclaimer}>{t('Disclaimer')} 
-              <a href="https://docs.robo-vault.com/robovault/risks" rel="noreferrer">
+              <a href="https://docs.robo-vault.com/security/risks" rel="noreferrer">
                 <i className={`fas fa-book ${classes.linkIcon}`}></i>
               </a>
           </Typography>
