@@ -30,9 +30,9 @@ export function fetchVaultsData({ web3, pools }) {
       const vaultCalls = pools.map(pool => {
         const vault = new web3.eth.Contract(vaultABI, pool.earnedTokenAddress);
         return {
-          pricePerFullShare: vault.methods.getPricePerShare(),
-          tvl: vault.methods.estimatedTotalAssets(),
-          balanceReserves: vault.methods.balanceReserves(),
+          pricePerFullShare: vault.methods.pricePerShare(),
+          tvl: vault.methods.totalAssets(),
+          // balanceReserves: vault.methods.totalAssets(),
         };
       });
 
@@ -47,7 +47,7 @@ export function fetchVaultsData({ web3, pools }) {
             return {
               pricePerFullShare: new BigNumber(pricePerFullShare).toNumber() || 1,
               tvl: byDecimals(data[0][i].tvl, pool.tokenDecimals).toNumber(),
-              balanceReserves: byDecimals(data[0][i].balanceReserves, pool.tokenDecimals).toNumber(),
+              // balanceReserves: byDecimals(data[0][i].balanceReserves, pool.tokenDecimals).toNumber(),
               oraclePrice: fetchPrice({ id: pool.oracleId }) || 0,
             };
           });
