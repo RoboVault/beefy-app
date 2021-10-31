@@ -42,12 +42,11 @@ export function fetchVaultsData({ web3, pools }) {
       ])
         .then(data => {
           const newPools = pools.map((pool, i) => {
-            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, 18).toNumber();
+            const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, pool.tokenDecimals).toNumber();
             
             return {
               pricePerFullShare: new BigNumber(pricePerFullShare).toNumber() || 1,
               tvl: byDecimals(data[0][i].tvl, pool.tokenDecimals).toNumber(),
-              // balanceReserves: byDecimals(data[0][i].balanceReserves, pool.tokenDecimals).toNumber(),
               oraclePrice: fetchPrice({ id: pool.oracleId }) || 0,
             };
           });
