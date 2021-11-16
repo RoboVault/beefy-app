@@ -19,7 +19,7 @@ export const fantomPools = [
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
-    platform: 'Scream + Lqdr + SpiritSwap',
+    platform: 'Multistrategy',
     assets: ['USDC'],
     callFee: 0.05,
     withdrawalFee: '0%',
