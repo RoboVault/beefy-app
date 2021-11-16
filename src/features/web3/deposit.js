@@ -11,7 +11,7 @@ const _deposit = ({ web3, contract, amount, isAll, address, dispatch }) => {
   return new Promise((resolve, reject) => {
     if (isAll) {
       contract.methods
-        .depositAll()
+        .deposit()
         .send({ from: address })
         .on('transactionHash', function (hash) {
           dispatch(
