@@ -65,8 +65,9 @@ const PoolSummary = ({
     pool.earnedTokenDecimals
   );
   const depositedUsd = deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';
-  const balanceReservesUsd = deposited > 0 && fetchVaultsDataDone ? formatTvl(pool.balanceReserves, pool.oraclePrice) : '';  
-
+  // const balanceReservesUsd = deposited > 0 && fetchVaultsDataDone ? formatTvl(pool.balanceReserves, pool.oraclePrice) : '';  
+  const depositLimitUsd = fetchVaultsDataDone ? formatTvl(pool.depositLimit, pool.oraclePrice) : '';  
+  console.log(pool.depositLimit)
   const onSummaryClick = useCallback(
     e => {
       if (!e.target || !e.target.classList.contains('tooltip-toggle')) {
@@ -129,12 +130,13 @@ const PoolSummary = ({
         </Grid>
         <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStatWithTooltip
-            value={formatReserves(pool.balanceReserves, 1)}
-            subvalue={balanceReservesUsd}
-            label={t('Vault-Reserves')}
+            value={formatReserves(pool.depositLimit, 1)}
+            subvalue={depositLimitUsd}
+            // label={t('Vault-Reserves')}
+            label={'TVL Limit'}
             isLoading={!fetchVaultsDataDone}
             className={classes.itemInner}
-            tooltip={t('Vault-ReservesTooltip')}
+            // tooltip={t('Vault-ReservesTooltip')}
           />
         </Grid>
           <ApyStats

@@ -11,7 +11,7 @@ const _withdraw = ({ web3, contract, address, isAll, amount, dispatch }) => {
   return new Promise((resolve, reject) => {
     if (isAll) {
       contract.methods
-        .withdrawAll()
+        .withdraw()
         .send({ from: address })
         .on('transactionHash', function (hash) {
           console.log(hash);
