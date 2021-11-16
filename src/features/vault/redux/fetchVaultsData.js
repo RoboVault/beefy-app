@@ -33,6 +33,7 @@ export function fetchVaultsData({ web3, pools }) {
           pricePerFullShare: vault.methods.pricePerShare(),
           tvl: vault.methods.totalAssets(),
           // balanceReserves: vault.methods.totalAssets(),
+          depositLimit: vault.methods.depositLimit(),
         };
       });
 
@@ -43,11 +44,13 @@ export function fetchVaultsData({ web3, pools }) {
         .then(data => {
           const newPools = pools.map((pool, i) => {
             const pricePerFullShare = byDecimals(data[0][i].pricePerFullShare, pool.tokenDecimals).toNumber();
+            const depositLimit = byDecimals(data[0][i].depositLimit, pool.tokenDecimals).toNumber();
             
             return {
               pricePerFullShare: new BigNumber(pricePerFullShare).toNumber() || 1,
               tvl: byDecimals(data[0][i].tvl, pool.tokenDecimals).toNumber(),
               oraclePrice: fetchPrice({ id: pool.oracleId }) || 0,
+              depositLimit: depositLimit,
             };
           });
           dispatch({
