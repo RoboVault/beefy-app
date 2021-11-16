@@ -412,9 +412,9 @@ const WithdrawSection = ({ pool, index, sharesBalance }) => {
                 )}
               </div>
             )}
-            <div className={classes.zapNote}>
+            {/* <div className={classes.zapNote}>
               <span>{t('Vault-WithdrawScenario')}&nbsp;</span>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
