@@ -1,6 +1,6 @@
 export const fantomPools = [
   {
-    id: 'USDC Multistrategy V3',
+    id: 'Robovault V3 USDC',
     logo: 'tokens/USDC.png',
     name: 'USDC Vault V3',
     token: 'USDC',
@@ -28,7 +28,7 @@ export const fantomPools = [
     collateralCap: false,
   },
   {
-    id: 'USDC-Scream-Spooky (WFTM) V3',
+    id: 'Robovault V3 USDC (B)',
     logo: 'tokens/USDC.png',
     name: 'USDC Vault V3 (B)',
     token: 'USDC',
@@ -56,7 +56,7 @@ export const fantomPools = [
     collateralCap: false,
   },
   {
-    id: 'USDC-Scream-Lqdr-Spooky (WFTM) V3',
+    id: 'Robovault V3 USDC (C)',
     logo: 'tokens/USDC.png',
     name: 'USDC Vault V3 (C)',
     token: 'USDC',
