@@ -142,14 +142,14 @@ const PoolTitle = ({
           ) : (
             ''
           )}
-          {holderAnalyticsUrl ? (
+          {/* {holderAnalyticsUrl ? (
             <a className={classes.url} href={holderAnalyticsUrl} target="_blank" rel="noopener noreferrer">
               <span>{'💰'}</span>
               {'\u00A0\u00A0'}
             </a>
           ) : (
             ''
-          )}
+          )} */}
           {addLiquidityUrl ? (
             <a
               className={classes.url}

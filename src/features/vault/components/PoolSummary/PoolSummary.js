@@ -170,7 +170,7 @@ const toHolderAnalyticsUrl = (address, id) => {
 }
 
 const toTokenAnalyticsUrl = (address, id) => {
-  const url = `http://analytics.robo-vault.com/d/DkDnB-Z7z2/vaults-dash-v2?orgId=1&var-vault=${id}`
+  const url = `http://analytics.robo-vault.com/d/3J6qoit7k/vaults-dash-v3?orgId=1&var-vault=${id}`
   return url
 }
 
