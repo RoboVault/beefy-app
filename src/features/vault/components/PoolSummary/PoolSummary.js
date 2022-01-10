@@ -130,13 +130,11 @@ const PoolSummary = ({
         </Grid>
         <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStatWithTooltip
-            value={formatReserves(pool.depositLimit, 1)}
-            subvalue={depositLimitUsd}
-            // label={t('Vault-Reserves')}
+            value={depositLimitUsd}
+            subvalue={formatReserves(pool.depositLimit, 1)}
             label={'TVL Limit'}
             isLoading={!fetchVaultsDataDone}
             className={classes.itemInner}
-            // tooltip={t('Vault-ReservesTooltip')}
           />
         </Grid>
           <ApyStats
@@ -150,6 +148,7 @@ const PoolSummary = ({
         <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStat
             value={formatTvl(pool.tvl, pool.oraclePrice)}
+            subvalue={formatReserves(pool.tvl, 1)}
             label={t('Vault-TVL')}
             isLoading={!fetchVaultsDataDone}
             className={classes.itemInner}
