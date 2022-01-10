@@ -17,7 +17,7 @@ const Disclaimer = () => {
       <Grid container item className={classes.root} justify="center">
         {
           <Typography inline className={classes.annoucement}>
-              <span>This product is in an Beta Testing phase - Please use with caution</span><br/>
+              <span>This product is in a Beta Testing phase - Please use with caution</span><br/>
           </Typography>
         }
       </Grid>
