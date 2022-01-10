@@ -128,6 +128,14 @@ const PoolSummary = ({
             className={classes.itemInner}
           />
         </Grid>
+        <ApyStats
+          apy={apy}
+          launchpoolApr={launchpool && launchpool.apy ? launchpool.apy : null}
+          isLoading={!fetchApysDone}
+          itemClasses={`${classes.item} ${classes.itemStats}`}
+          itemInnerClasses={classes.itemInner}
+          status={pool.status}
+        />
         <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStatWithTooltip
             value={depositLimitUsd}
@@ -137,14 +145,6 @@ const PoolSummary = ({
             className={classes.itemInner}
           />
         </Grid>
-          <ApyStats
-            apy={apy}
-            launchpoolApr={launchpool && launchpool.apy ? launchpool.apy : null}
-            isLoading={!fetchApysDone}
-            itemClasses={`${classes.item} ${classes.itemStats}`}
-            itemInnerClasses={classes.itemInner}
-            status={pool.status}
-          />
         <Grid item xs={6} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStat
             value={formatTvl(pool.tvl, pool.oraclePrice)}
