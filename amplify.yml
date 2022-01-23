@@ -3,6 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
+        - node -v
+        - nvm install 14.18.0
+        - nvm use 14.18.0
+        - node -v
         - npm install
         - npm run prepare
     build:
