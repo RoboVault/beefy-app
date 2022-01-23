@@ -10,6 +10,7 @@ frontend:
         - npm run prepare
     build:
       commands:
+        - npm rebuild node-sass
         - npm run build
   artifacts:
     baseDirectory: build
