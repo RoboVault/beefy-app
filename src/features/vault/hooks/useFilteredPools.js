@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import useFilterStorage from '../../home/hooks/useFiltersStorage';
 
 const DEFAULT = {
-  hideDecomissioned: false,
+  hideDecomissioned: true,
   hideZeroBalances: false,
   hideZeroVaultBalances: false,
   showBoosted: false,
@@ -41,9 +41,9 @@ const useFilteredPools = (pools, tokens) => {
     filteredPools = hideZeroVaultBalances(filteredPools, tokens);
   }
 
-  // if (filters.hideDecomissioned) {
-  //   filteredPools = hideDecomissioned(filteredPools, tokens);
-  // }
+  if (filters.hideDecomissioned) {
+    filteredPools = hideDecomissioned(filteredPools, tokens);
+  }
 
   if (filters.showBoosted) {
     filteredPools = showBoosted(filteredPools);
