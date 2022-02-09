@@ -354,7 +354,6 @@ export const getNetworkConnectors = t => {
     */
     case '250':
       return {
-        network: 'fantom',
         cacheProvider: true,
         providerOptions: {
           injected: {
@@ -367,8 +366,8 @@ export const getNetworkConnectors = t => {
             package: WalletConnectProvider,
             options: {
               rpc: {
-                1: 'https://rpcapi.fantom.network',
-                250: 'https://rpcapi.fantom.network',
+                1: 'https://rpc.ftm.tools/',
+                250: 'https://rpc.ftm.tools/',
               },
             },
           },
