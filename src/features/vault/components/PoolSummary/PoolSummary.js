@@ -67,7 +67,7 @@ const PoolSummary = ({
   const depositedUsd = deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';
   // const balanceReservesUsd = deposited > 0 && fetchVaultsDataDone ? formatTvl(pool.balanceReserves, pool.oraclePrice) : '';  
   const depositLimitUsd = fetchVaultsDataDone ? formatTvl(pool.depositLimit, pool.oraclePrice) : '';  
-  console.log(pool.depositLimit)
+
   const onSummaryClick = useCallback(
     e => {
       if (!e.target || !e.target.classList.contains('tooltip-toggle')) {
