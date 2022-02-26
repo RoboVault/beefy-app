@@ -285,7 +285,7 @@ export const fantomPools = [
     name: 'Solidly USDC/MIM Vault',
     token: 'sAMM-USDC/MIM',
     // shortToken: 'WFTM',
-    tokenDescription: '',
+    tokenDescription: 'LP Multistrat Vault',
     tokenAddress: '0xbcab7d083Cf6a01e0DdA9ed7F8a02b47d125e682',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
