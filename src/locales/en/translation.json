@@ -9,7 +9,7 @@
   "Vault-MaxAPY": "Max APY",
   "Vault-APYDaily": "APY",
   "Vault-APY": "APY",
-  "Vault-APY-Tooltip": "Based on the performance of the previous 7 days or since launch",
+  "Vault-APY-Tooltip": "Based on the performance of the previous 3 days",
   "Vault-ReservesTooltip": "A portion of the vaults TVL is held in reserves and is available for fee-less withdrawals",
   "Vault-TVL": "TVL",
   "Vault-Reserves": "Vault Reserves",
