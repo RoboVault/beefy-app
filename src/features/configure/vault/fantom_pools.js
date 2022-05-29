@@ -46,7 +46,7 @@ export const fantomPools = [
     oracleId: 'USDC',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'Scream + SpookySwap',
     assets: ['USDC'],
     callFee: 0.05,
@@ -74,7 +74,7 @@ export const fantomPools = [
     oracleId: 'USDC',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'Scream + Lqdr + SpookySwap',
     assets: ['USDC'],
     callFee: 0.05,
@@ -250,7 +250,7 @@ export const fantomPools = [
     buyTokenUrl: 'https://ftmscan.com/address/0x81F0f4fDF5148f09aAE811b5995D94F703ED0963',
     lowLiquidity: false,
     collateralCap: false,
-  },		
+  },
   {
     id: 'Robovault V3 DAI',
     logo: 'tokens/DAI.png',
@@ -278,7 +278,7 @@ export const fantomPools = [
     buyTokenUrl: 'https://ftmscan.com/address/0xd10112521e860bdE82FD34f88113052e434930C4',
     lowLiquidity: false,
     collateralCap: false,
-  },	
+  },
   {
     id: 'Robovault rvsAMM-USDC/MIM',
     logo: 'tokens/MIM-USDC.png',
@@ -332,5 +332,5 @@ export const fantomPools = [
     buyTokenUrl: 'https://ftmscan.com/address/0xB41Df11bA7825f5ED2b67899975169432f05234f',
     lowLiquidity: false,
     collateralCap: false,
-  },				
+  },
 ];
